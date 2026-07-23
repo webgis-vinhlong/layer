@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180" role="img" aria-labelledby="title desc">
+  <title id="title">Vĩnh Long Layer Atlas</title>
+  <desc id="desc">Biểu trưng các lớp bản đồ và dòng sông cách điệu</desc>
+  <defs>
+    <linearGradient id="a" x1="32" y1="28" x2="152" y2="158" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3CE0CE"/>
+      <stop offset="1" stop-color="#087F9A"/>
+    </linearGradient>
+    <linearGradient id="b" x1="65" y1="38" x2="128" y2="151" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0FFFC"/>
+      <stop offset="1" stop-color="#8FE8DE"/>
+    </linearGradient>
+    <filter id="s" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#00192A" flood-opacity=".24"/>
+    </filter>
+  </defs>
+  <g filter="url(#s)">
+    <path fill="#09263D" d="m26 53 66-38 66 38v74l-66 38-66-38z"/>
+    <path fill="url(#a)" d="m39 61 53-30 53 30-53 30z"/>
+    <path fill="#0E4960" d="m39 61 53 30v59l-53-30z"/>
+    <path fill="#0A344C" d="m145 61-53 30v59l53-30z"/>
+    <path fill="none" stroke="url(#b)" stroke-linecap="round" stroke-width="10" d="M124 53c-31 11-13 30-43 41s-9 34-29 42"/>
+    <circle cx="124" cy="53" r="7" fill="#F3FFFC"/>
+    <circle cx="52" cy="136" r="7" fill="#49D9C8"/>
+  </g>
+  <g fill="#09263D">
+    <text x="190" y="89" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="51" font-weight="780" letter-spacing="-2">Vĩnh Long</text>
+    <text x="191" y="126" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="26" font-weight="670" letter-spacing="5.5">LAYER ATLAS</text>
+  </g>
+  <path fill="#0DA6A6" d="M192 143h382v4H192z"/>
+  <text x="590" y="149" fill="#577183" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15" font-weight="600">OPEN GIS</text>
+</svg>

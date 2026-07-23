@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#071b2f">
+    <meta
+      name="description"
+      content="WebGIS Vĩnh Long mã nguồn mở: 103 lớp dữ liệu vector PMTiles, MapLibre GL JS và công cụ truy vấn trực quan."
+    >
+    <title>Vĩnh Long Layer Atlas · WebGIS mã nguồn mở</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/maplibre-gl@6.0.0/dist/maplibre-gl.css"
+    >
+    <link rel="stylesheet" href="assets/styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/maplibre-gl@6.0.0/dist/maplibre-gl.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/pmtiles@4.4.1/dist/pmtiles.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+    <script defer src="assets/app.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#map">Chuyển đến bản đồ</a>
+
+    <div class="app-shell">
+      <header class="topbar">
+        <button
+          id="sidebar-toggle"
+          class="icon-button mobile-only"
+          type="button"
+          aria-label="Mở danh sách lớp bản đồ"
+          aria-controls="sidebar"
+          aria-expanded="false"
+        >
+          <i data-lucide="panels-top-left"></i>
+        </button>
+
+        <a class="brand" href="./" aria-label="Vĩnh Long Layer Atlas">
+          <img src="assets/logo.svg" alt="" width="42" height="42">
+          <span class="brand-copy">
+            <strong>Vĩnh Long Layer Atlas</strong>
+            <small>Open geospatial intelligence</small>
+          </span>
+        </a>
+
+        <div class="topbar-metrics" aria-label="Thống kê dữ liệu">
+          <span><strong id="metric-layers">103</strong> lớp</span>
+          <span><strong id="metric-features">35.017</strong> đối tượng</span>
+          <span class="status-pill"><span class="status-dot"></span> PMTiles v3</span>
+        </div>
+
+        <a
+          class="github-link"
+          href="https://github.com/webgis-vinhlong/layer"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <i data-lucide="github"></i>
+          <span class="desktop-only">Mã nguồn</span>
+        </a>
+      </header>
+
+      <aside id="sidebar" class="sidebar" aria-label="Trình quản lý lớp bản đồ">
+        <div class="sidebar-head">
+          <div>
+            <p class="eyebrow">DỮ LIỆU CHUYÊN ĐỀ</p>
+            <h1>Lớp bản đồ</h1>
+          </div>
+          <button
+            id="sidebar-close"
+            class="icon-button mobile-only"
+            type="button"
+            aria-label="Đóng danh sách lớp bản đồ"
+          >
+            <i data-lucide="x"></i>
+          </button>
+        </div>
+
+        <div class="search-wrap">
+          <i data-lucide="search" aria-hidden="true"></i>
+          <input
+            id="layer-search"
+            type="search"
+            inputmode="search"
+            autocomplete="off"
+            placeholder="Tìm trong 103 lớp dữ liệu…"
+            aria-label="Tìm lớp bản đồ"
+          >
+          <kbd>/</kbd>
+        </div>
+
+        <div class="quick-actions" role="group" aria-label="Thao tác nhanh">
+          <button id="show-featured" class="chip active" type="button">
+            <i data-lucide="sparkles"></i> Nổi bật
+          </button>
+          <button id="show-all" class="chip" type="button">
+            <i data-lucide="layers-3"></i> Tất cả
+          </button>
+          <button id="hide-all" class="chip" type="button">
+            <i data-lucide="eye-off"></i> Ẩn
+          </button>
+        </div>
+
+        <div class="layer-summary">
+          <span><strong id="active-count">0</strong> lớp đang bật</span>
+          <label class="switch-label">
+            <span>Nhãn</span>
+            <input id="label-toggle" type="checkbox" checked>
+            <span class="switch" aria-hidden="true"></span>
+          </label>
+        </div>
+
+        <div id="layer-groups" class="layer-groups" aria-live="polite"></div>
+
+        <footer class="sidebar-footer">
+          <span>Nguồn: hatang.vinhlong.gov.vn</span>
+          <span>MIT · Long Ngo</span>
+        </footer>
+      </aside>
+
+      <main class="map-stage">
+        <div id="map" role="application" aria-label="Bản đồ tương tác tỉnh Vĩnh Long"></div>
+
+        <div id="map-loading" class="map-loading" role="status">
+          <img src="assets/favicon.svg" alt="" width="38" height="38">
+          <div>
+            <strong>Đang mở kho vector</strong>
+            <span>PMTiles · HTTP Range</span>
+          </div>
+        </div>
+
+        <section class="map-toolbar" aria-label="Công cụ bản đồ">
+          <button id="home-button" class="tool-button" type="button" title="Về toàn tỉnh">
+            <i data-lucide="scan"></i><span>Toàn tỉnh</span>
+          </button>
+          <button id="locate-button" class="tool-button" type="button" title="Vị trí của tôi">
+            <i data-lucide="locate-fixed"></i><span>Vị trí</span>
+          </button>
+          <button id="basemap-button" class="tool-button" type="button" aria-expanded="false">
+            <i data-lucide="map"></i><span>Nền bản đồ</span>
+          </button>
+        </section>
+
+        <div id="basemap-menu" class="basemap-menu" hidden>
+          <p>Nền bản đồ</p>
+          <button class="basemap-option active" data-basemap="light" type="button">
+            <span class="basemap-swatch light"></span>
+            <span><strong>Sáng</strong><small>CARTO Positron</small></span>
+            <i data-lucide="check"></i>
+          </button>
+          <button class="basemap-option" data-basemap="dark" type="button">
+            <span class="basemap-swatch dark"></span>
+            <span><strong>Tối</strong><small>CARTO Dark Matter</small></span>
+            <i data-lucide="check"></i>
+          </button>
+          <button class="basemap-option" data-basemap="satellite" type="button">
+            <span class="basemap-swatch satellite"></span>
+            <span><strong>Vệ tinh</strong><small>Esri World Imagery</small></span>
+            <i data-lucide="check"></i>
+          </button>
+        </div>
+
+        <div class="map-hint">
+          <i data-lucide="mouse-pointer-2"></i>
+          <span>Nhấp một ký hiệu để xem thuộc tính</span>
+        </div>
+
+        <section id="inspector" class="inspector" aria-label="Thông tin đối tượng" hidden>
+          <div class="inspector-accent"></div>
+          <header>
+            <div>
+              <p id="inspector-category" class="eyebrow">LỚP DỮ LIỆU</p>
+              <h2 id="inspector-title">Thông tin đối tượng</h2>
+            </div>
+            <button id="inspector-close" class="icon-button" type="button" aria-label="Đóng">
+              <i data-lucide="x"></i>
+            </button>
+          </header>
+          <div id="inspector-meta" class="inspector-meta"></div>
+          <dl id="inspector-properties" class="property-list"></dl>
+        </section>
+
+        <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+      </main>
+
+      <button id="backdrop" class="backdrop" type="button" tabindex="-1" hidden></button>
+    </div>
+
+    <noscript>WebGIS này cần JavaScript để hiển thị dữ liệu bản đồ.</noscript>
+  </body>
+</html>

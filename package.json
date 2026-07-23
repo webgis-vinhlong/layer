@@ -1,0 +1,23 @@
+{
+  "name": "vinhlong-layer-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "description": "WebGIS Vĩnh Long mã nguồn mở với 103 lớp vector PMTiles.",
+  "license": "MIT",
+  "author": "Long Ngo",
+  "scripts": {
+    "build:data": "python3 tools/build_pmtiles.py --source-dir data/geojson --catalog data/source-catalog.json --output-dir data --work-dir build",
+    "build:tiles": "node tools/build_tiles.mjs",
+    "build": "npm run build:data && npm run build:tiles",
+    "manifest": "node tools/write_pmtiles_manifest.mjs",
+    "verify": "node tools/verify.mjs",
+    "serve": "python3 -m http.server 4173"
+  },
+  "devDependencies": {
+    "@bikehopper/node-tippecanoe": "0.3.4",
+    "@versatiles/versatiles-rs": "4.6.0"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

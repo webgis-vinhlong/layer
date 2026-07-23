@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "file": "data/vinhlong-layers.pmtiles",
+  "format": "PMTiles",
+  "version": 3,
+  "tileType": "MVT",
+  "compression": "gzip",
+  "bytes": 7640555,
+  "sha256": "a75c15fca7a61d703e4664b78c7ddebbc0710eca4857622072d387a7d83d36fd",
+  "minzoom": 7,
+  "maxzoom": 16,
+  "bounds": [
+    105.6850004,
+    9.53387,
+    106.782085,
+    10.624219
+  ],
+  "sourceLayers": [
+    "points",
+    "lines",
+    "polygons"
+  ],
+  "features": 35017
+}

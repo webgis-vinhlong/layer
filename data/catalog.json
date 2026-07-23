@@ -1,0 +1,5062 @@
+{
+  "schemaVersion": 1,
+  "title": "Vĩnh Long Layer Atlas",
+  "generatedAt": "2026-07-20T01:19:54+00:00",
+  "source": "https://hatang.vinhlong.gov.vn/",
+  "coordinateSystem": "EPSG:4326",
+  "bounds": [
+    105.6850004,
+    9.53387,
+    106.782085,
+    10.624219
+  ],
+  "center": [
+    106.2335427,
+    10.0790445
+  ],
+  "counts": {
+    "categories": 19,
+    "layers": 103,
+    "features": 35017,
+    "sourceFeatures": 36643,
+    "invalidGeometries": 1626,
+    "points": 30221,
+    "lines": 4569,
+    "polygons": 227,
+    "coordinateCorrections": 1499
+  },
+  "pmtiles": {
+    "file": "data/vinhlong-layers.pmtiles",
+    "sourceLayers": [
+      "points",
+      "lines",
+      "polygons"
+    ],
+    "minzoom": 7,
+    "maxzoom": 16
+  },
+  "categories": [
+    {
+      "id": "hanh-chinh",
+      "input": null,
+      "label": "Hành chính nền",
+      "icon": "map-pinned",
+      "color": "#e63946",
+      "layerIds": [
+        339
+      ],
+      "layerCount": 1,
+      "featureCount": 124
+    },
+    {
+      "id": "banqlkcn",
+      "input": "banqlkcn",
+      "label": "Khu kinh tế & công nghiệp",
+      "icon": "factory",
+      "color": "#c2410c",
+      "layerIds": [
+        307
+      ],
+      "layerCount": 1,
+      "featureCount": 23
+    },
+    {
+      "id": "bcvt",
+      "input": "bcvt",
+      "label": "Bưu chính & viễn thông",
+      "icon": "radio-tower",
+      "color": "#7c3aed",
+      "layerIds": [
+        5,
+        6,
+        7,
+        8,
+        13,
+        165,
+        166,
+        167,
+        179,
+        368,
+        370,
+        371
+      ],
+      "layerCount": 12,
+      "featureCount": 14228
+    },
+    {
+      "id": "bvtv",
+      "input": "bvtv",
+      "label": "Bảo vệ thực vật",
+      "icon": "sprout",
+      "color": "#15803d",
+      "layerIds": [
+        262,
+        263,
+        267,
+        268,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        303
+      ],
+      "layerCount": 11,
+      "featureCount": 1178
+    },
+    {
+      "id": "nuoc_sach",
+      "input": "nuoc_sach",
+      "label": "Nước sạch",
+      "icon": "droplets",
+      "color": "#0284c7",
+      "layerIds": [
+        243,
+        244,
+        253,
+        254,
+        256,
+        257,
+        258,
+        259
+      ],
+      "layerCount": 8,
+      "featureCount": 10550
+    },
+    {
+      "id": "sgtvt",
+      "input": "sgtvt",
+      "label": "Giao thông vận tải",
+      "icon": "route",
+      "color": "#334155",
+      "layerIds": [
+        154,
+        156,
+        158,
+        350,
+        352,
+        356
+      ],
+      "layerCount": 6,
+      "featureCount": 509
+    },
+    {
+      "id": "so_y_te",
+      "input": "so_y_te",
+      "label": "Y tế",
+      "icon": "hospital",
+      "color": "#dc2626",
+      "layerIds": [
+        327,
+        340
+      ],
+      "layerCount": 2,
+      "featureCount": 275
+    },
+    {
+      "id": "socongthuong",
+      "input": "socongthuong",
+      "label": "Công thương",
+      "icon": "store",
+      "color": "#b45309",
+      "layerIds": [
+        347,
+        348,
+        349,
+        353,
+        355
+      ],
+      "layerCount": 5,
+      "featureCount": 1692
+    },
+    {
+      "id": "sodttg",
+      "input": "sodttg",
+      "label": "Dân tộc & tôn giáo",
+      "icon": "landmark",
+      "color": "#9333ea",
+      "layerIds": [
+        358,
+        359,
+        360,
+        362,
+        363,
+        364,
+        366
+      ],
+      "layerCount": 7,
+      "featureCount": 1166
+    },
+    {
+      "id": "sogddt",
+      "input": "sogddt",
+      "label": "Giáo dục & đào tạo",
+      "icon": "graduation-cap",
+      "color": "#2563eb",
+      "layerIds": [
+        311,
+        312,
+        313,
+        315,
+        316
+      ],
+      "layerCount": 5,
+      "featureCount": 1279
+    },
+    {
+      "id": "sogddt_quyhoach",
+      "input": "sogddt_quyhoach",
+      "label": "Quy hoạch giáo dục",
+      "icon": "school",
+      "color": "#4f46e5",
+      "layerIds": [
+        317,
+        318,
+        319,
+        320,
+        321,
+        322
+      ],
+      "layerCount": 6,
+      "featureCount": 377
+    },
+    {
+      "id": "sokhcn",
+      "input": "sokhcn",
+      "label": "Khoa học & công nghệ",
+      "icon": "flask-conical",
+      "color": "#0f766e",
+      "layerIds": [
+        308
+      ],
+      "layerCount": 1,
+      "featureCount": 42
+    },
+    {
+      "id": "sokhdt",
+      "input": "sokhdt",
+      "label": "Tài chính & kế hoạch đầu tư",
+      "icon": "wallet-cards",
+      "color": "#a16207",
+      "layerIds": [
+        285,
+        286,
+        287,
+        288,
+        369
+      ],
+      "layerCount": 5,
+      "featureCount": 1125
+    },
+    {
+      "id": "sonoivu",
+      "input": "sonoivu",
+      "label": "Nội vụ",
+      "icon": "briefcase-business",
+      "color": "#475569",
+      "layerIds": [
+        342,
+        361
+      ],
+      "layerCount": 2,
+      "featureCount": 198
+    },
+    {
+      "id": "sotuphap",
+      "input": "sotuphap",
+      "label": "Tư pháp",
+      "icon": "scale",
+      "color": "#1d4ed8",
+      "layerIds": [
+        335,
+        336
+      ],
+      "layerCount": 2,
+      "featureCount": 33
+    },
+    {
+      "id": "sovhttdl",
+      "input": "sovhttdl",
+      "label": "Văn hóa, thể thao & du lịch",
+      "icon": "palmtree",
+      "color": "#db2777",
+      "layerIds": [
+        337,
+        341,
+        344
+      ],
+      "layerCount": 3,
+      "featureCount": 269
+    },
+    {
+      "id": "thu_y",
+      "input": "thu_y",
+      "label": "Thú y",
+      "icon": "paw-print",
+      "color": "#be123c",
+      "layerIds": [
+        28,
+        31,
+        85,
+        86,
+        219,
+        298,
+        299,
+        304,
+        305
+      ],
+      "layerCount": 9,
+      "featureCount": 980
+    },
+    {
+      "id": "thuy_loi",
+      "input": "thuy_loi",
+      "label": "Thủy lợi",
+      "icon": "waves",
+      "color": "#0369a1",
+      "layerIds": [
+        245,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        260,
+        261
+      ],
+      "layerCount": 9,
+      "featureCount": 321
+    },
+    {
+      "id": "thuy_san",
+      "input": "thuy_san",
+      "label": "Thủy sản",
+      "icon": "fish",
+      "color": "#0891b2",
+      "layerIds": [
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280
+      ],
+      "layerCount": 8,
+      "featureCount": 648
+    }
+  ],
+  "layers": [
+    {
+      "id": 5,
+      "name": "Đại lý internet",
+      "geometry": "Point",
+      "categoryIds": [
+        "bcvt"
+      ],
+      "primaryCategoryId": "bcvt",
+      "featureCount": 49,
+      "available": true,
+      "file": "/data/layers/5.geojson",
+      "table": "bcvt.dai_ly_internet",
+      "sourceFeatureCount": 49,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.7046318,
+        9.636252,
+        106.69546,
+        10.304773
+      ],
+      "fields": [
+        "Doanh nghiệp",
+        "Ngày hoạt động",
+        "Phương thức kết nối",
+        "Số điện thoại",
+        "Tên đại lý",
+        "Tình trạng",
+        "Xã/Phường",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 49
+      },
+      "sourceFile": "data/geojson/5.geojson"
+    },
+    {
+      "id": 6,
+      "name": "Điểm cung cấp dịch vụ viễn thông",
+      "geometry": "Point",
+      "categoryIds": [
+        "bcvt"
+      ],
+      "primaryCategoryId": "bcvt",
+      "featureCount": 75,
+      "available": true,
+      "file": "/data/layers/6.geojson",
+      "table": "bcvt.dich_vu_vien_thong",
+      "sourceFeatureCount": 75,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.74904,
+        9.63246,
+        106.69188,
+        10.30959
+      ],
+      "fields": [
+        "Số điện thoại",
+        "Tình trạng hoạt động",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Điểm cung cấp dịch vụ",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 75
+      },
+      "sourceFile": "data/geojson/6.geojson"
+    },
+    {
+      "id": 7,
+      "name": "Doanh nghiệp bưu chính",
+      "geometry": "Point",
+      "categoryIds": [
+        "bcvt"
+      ],
+      "primaryCategoryId": "bcvt",
+      "featureCount": 15,
+      "available": true,
+      "file": "/data/layers/7.geojson",
+      "table": "bcvt.doanh_nghiep_buu_chinh",
+      "sourceFeatureCount": 15,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.9445752,
+        9.92192,
+        106.3833861,
+        10.25909
+      ],
+      "fields": [
+        "Chức vụ",
+        "Người phụ trách",
+        "Số điện thoại",
+        "Tên doanh nghiệp",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 15
+      },
+      "sourceFile": "data/geojson/7.geojson"
+    },
+    {
+      "id": 8,
+      "name": "Doanh nghiệp viễn thông",
+      "geometry": "Point",
+      "categoryIds": [
+        "bcvt"
+      ],
+      "primaryCategoryId": "bcvt",
+      "featureCount": 5,
+      "available": true,
+      "file": "/data/layers/8.geojson",
+      "table": "bcvt.doanh_nghiep_vien_thong",
+      "sourceFeatureCount": 5,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.959302,
+        10.2438678,
+        105.9791474,
+        10.2562586
+      ],
+      "fields": [
+        "Cấp",
+        "Doanh nghiệp",
+        "Huyện/Thị xã/Thành phố",
+        "Mã doanh nghiệp",
+        "Mã số",
+        "Mô tả giấy phép kinh doanh",
+        "Ngày cấp giấy phép thiết lập mạng",
+        "Ngày cấp phép kinh doanh",
+        "Ngày hoạt động",
+        "Số giấy phép hoạt động",
+        "Số giấy phép kinh doanh",
+        "Số giấy phép thiết lập mạng",
+        "Số thứ tự",
+        "Số điện thoại",
+        "Tên doanh nghiệp",
+        "Tọa độ X",
+        "Tọa độ Y",
+        "Xã/Phường/Thị trấn",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 5
+      },
+      "sourceFile": "data/geojson/8.geojson"
+    },
+    {
+      "id": 13,
+      "name": "Tổng trạm BTS",
+      "geometry": "Point",
+      "categoryIds": [
+        "bcvt"
+      ],
+      "primaryCategoryId": "bcvt",
+      "featureCount": 4905,
+      "available": true,
+      "file": "/data/layers/13.geojson",
+      "table": "bcvt.tram_bts",
+      "sourceFeatureCount": 4906,
+      "invalidGeometryCount": 1,
+      "bounds": [
+        105.69633,
+        9.53387,
+        106.782085,
+        10.3356
+      ],
+      "fields": [
+        "Có giá trị đến",
+        "Mã trạm",
+        "Số giấy chứng nhận kiểm định",
+        "Trạm 2G",
+        "Trạm 3G",
+        "Trạm 4G",
+        "Trạm 5G",
+        "Tên doanh nghiệp",
+        "Tên trạm BTS",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ lắp đặt"
+      ],
+      "geometryCounts": {
+        "Point": 4905
+      },
+      "sourceFile": "data/geojson/13.geojson"
+    },
+    {
+      "id": 28,
+      "name": "Cơ sở ấp trứng",
+      "geometry": "Point",
+      "categoryIds": [
+        "thu_y"
+      ],
+      "primaryCategoryId": "thu_y",
+      "featureCount": 38,
+      "available": true,
+      "file": "/data/layers/28.geojson",
+      "table": "thu_y.coso_aptrung",
+      "sourceFeatureCount": 38,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.827966,
+        9.947241,
+        106.18636,
+        10.250781
+      ],
+      "fields": [
+        "Email",
+        "Họ tên chủ cơ sở",
+        "Loại hình kinh doanh",
+        "Tên cơ sở sản xuất kinh doanh",
+        "Tình trạng hoạt động",
+        "Website",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 38
+      },
+      "sourceFile": "data/geojson/28.geojson"
+    },
+    {
+      "id": 31,
+      "name": "Cơ sở giết mổ",
+      "geometry": "Point",
+      "categoryIds": [
+        "thu_y"
+      ],
+      "primaryCategoryId": "thu_y",
+      "featureCount": 31,
+      "available": true,
+      "file": "/data/layers/31.geojson",
+      "table": "thu_y.coso_gietmo",
+      "sourceFeatureCount": 31,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.719345,
+        9.9420903,
+        106.233378,
+        10.289992
+      ],
+      "fields": [
+        "Công suất thiết kế",
+        "Công suất thực tế",
+        "Giấy chứng nhận ATTP",
+        "Hình thức sản xuất",
+        "Trạng thái hoạt động",
+        "Tên chủ cơ sở",
+        "Tên cơ sở sản xuất kinh doanh",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ",
+        "Động vật giết mổ"
+      ],
+      "geometryCounts": {
+        "Point": 31
+      },
+      "sourceFile": "data/geojson/31.geojson"
+    },
+    {
+      "id": 85,
+      "name": "Cơ sở chăn nuôi heo",
+      "geometry": "Point",
+      "categoryIds": [
+        "thu_y"
+      ],
+      "primaryCategoryId": "thu_y",
+      "featureCount": 274,
+      "available": true,
+      "file": "/data/layers/85.geojson",
+      "table": "thu_y.co_so_chan_nuoi_heo",
+      "sourceFeatureCount": 274,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.70072,
+        9.91361,
+        106.268505,
+        10.318248
+      ],
+      "fields": [
+        "Heo sinh sản",
+        "Heo thịt",
+        "Tên cơ sở",
+        "Tổng đàn ",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 274
+      },
+      "sourceFile": "data/geojson/85.geojson"
+    },
+    {
+      "id": 86,
+      "name": "Cơ sở chăn nuôi gà",
+      "geometry": "Point",
+      "categoryIds": [
+        "thu_y"
+      ],
+      "primaryCategoryId": "thu_y",
+      "featureCount": 219,
+      "available": true,
+      "file": "/data/layers/86.geojson",
+      "table": "thu_y.co_so_chan_nuoi_ga",
+      "sourceFeatureCount": 219,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.731382,
+        9.90801,
+        106.266654,
+        10.267095
+      ],
+      "fields": [
+        "Gà thịt",
+        "Gà đẻ",
+        "Tên cơ sở",
+        "Tổng đàn",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 219
+      },
+      "sourceFile": "data/geojson/86.geojson"
+    },
+    {
+      "id": 154,
+      "name": "Cầu (đường tỉnh)",
+      "geometry": "Point",
+      "categoryIds": [
+        "sgtvt"
+      ],
+      "primaryCategoryId": "sgtvt",
+      "featureCount": 203,
+      "available": true,
+      "file": "/data/layers/154.geojson",
+      "table": "sgtvt.test",
+      "sourceFeatureCount": 203,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.70797,
+        9.6129054,
+        106.5453161,
+        10.264857
+      ],
+      "fields": [
+        "Bề rộng cầu",
+        "Dạng kết cấu chính",
+        "Giá trị xây dựng cầu",
+        "Khổ xe chạy",
+        "Lý trình",
+        "Năm hoàn thành",
+        "Năm khởi công",
+        "Sơ đồ nhịp",
+        "Tên cầu",
+        "Tên đường",
+        "Tình trạng cầu",
+        "Tĩnh không thông thuyền (Chiều ngang)",
+        "Tĩnh không thông thuyền (chiều đứng)",
+        "Tải trọng thiết kế",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Đơn vị quản lý",
+        "Địa chỉ",
+        "Đối tượng vượt"
+      ],
+      "geometryCounts": {
+        "Point": 203
+      },
+      "sourceFile": "data/geojson/154.geojson"
+    },
+    {
+      "id": 156,
+      "name": "Tỉnh lộ",
+      "geometry": "LineString",
+      "categoryIds": [
+        "sgtvt"
+      ],
+      "primaryCategoryId": "sgtvt",
+      "featureCount": 14,
+      "available": true,
+      "file": "/data/layers/156.geojson",
+      "table": "sgtvt.tinh_lo",
+      "sourceFeatureCount": 14,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.8841019,
+        9.9937477,
+        106.0168991,
+        10.2289925
+      ],
+      "fields": [
+        "Mã tỉnh lộ",
+        "Tên tỉnh lộ",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Điểm cuối",
+        "Điểm đầu"
+      ],
+      "geometryCounts": {
+        "LineString": 14
+      },
+      "sourceFile": "data/geojson/156.geojson"
+    },
+    {
+      "id": 158,
+      "name": "Cầu (đường xã)",
+      "geometry": "Point",
+      "categoryIds": [
+        "sgtvt"
+      ],
+      "primaryCategoryId": "sgtvt",
+      "featureCount": 211,
+      "available": true,
+      "file": "/data/layers/158.geojson",
+      "table": "sgtvt.cau__duong_huyen_",
+      "sourceFeatureCount": 330,
+      "invalidGeometryCount": 119,
+      "bounds": [
+        105.76595,
+        9.913978,
+        106.264015,
+        10.313668
+      ],
+      "fields": [
+        "Bề rộng cầu",
+        "Dạng kết cấu chính",
+        "Giá trị xây dựng cầu",
+        "Khổ xe chạy",
+        "Lý trình",
+        "Năm hoàn thành",
+        "Năm khởi công",
+        "Sơ đồ nhịp",
+        "Tên cầu",
+        "Tên đường",
+        "Tình trạng cầu",
+        "Tĩnh không thông thuyền (chiều ngang)",
+        "Tĩnh không thông thuyền (chiều đứng)",
+        "Tải trọng thiết kế",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Đơn vị quản lý",
+        "Địa chỉ",
+        "Đối tượng vượt"
+      ],
+      "geometryCounts": {
+        "Point": 211
+      },
+      "sourceFile": "data/geojson/158.geojson"
+    },
+    {
+      "id": 165,
+      "name": "Trạm BTS  3G",
+      "geometry": "Point",
+      "categoryIds": [
+        "bcvt"
+      ],
+      "primaryCategoryId": "bcvt",
+      "featureCount": 2524,
+      "available": true,
+      "file": "/data/layers/165.geojson",
+      "table": "bcvt.tra_m_3g",
+      "sourceFeatureCount": 2525,
+      "invalidGeometryCount": 1,
+      "bounds": [
+        105.69633,
+        9.54248,
+        106.782085,
+        10.3356
+      ],
+      "fields": [
+        "Có giá trị đến",
+        "Số giấy chứng nhận kiểm định",
+        "Trạm 3G",
+        "Tên doanh nghiệp",
+        "Tên trạm BTS",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ lắp đặt"
+      ],
+      "geometryCounts": {
+        "Point": 2524
+      },
+      "sourceFile": "data/geojson/165.geojson"
+    },
+    {
+      "id": 166,
+      "name": "Trạm BTS 4G",
+      "geometry": "Point",
+      "categoryIds": [
+        "bcvt"
+      ],
+      "primaryCategoryId": "bcvt",
+      "featureCount": 4905,
+      "available": true,
+      "file": "/data/layers/166.geojson",
+      "table": "bcvt.tra_m_4g",
+      "sourceFeatureCount": 4906,
+      "invalidGeometryCount": 1,
+      "bounds": [
+        105.69633,
+        9.53387,
+        106.782085,
+        10.3356
+      ],
+      "fields": [
+        "Có giá trị đến",
+        "Số giấy chứng nhận kiểm định",
+        "Trạm 4G",
+        "Tên doanh nghiệp",
+        "Tên trạm BTS",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ lắp đặt"
+      ],
+      "geometryCounts": {
+        "Point": 4905
+      },
+      "sourceFile": "data/geojson/166.geojson"
+    },
+    {
+      "id": 167,
+      "name": "Điểm phục vụ bưu chính",
+      "geometry": "Point",
+      "categoryIds": [
+        "bcvt"
+      ],
+      "primaryCategoryId": "bcvt",
+      "featureCount": 479,
+      "available": true,
+      "file": "/data/layers/167.geojson",
+      "table": "bcvt.diem_phuc_vu_buu_chinh_khac",
+      "sourceFeatureCount": 520,
+      "invalidGeometryCount": 41,
+      "bounds": [
+        105.7306328,
+        9.5520454,
+        106.764,
+        10.329912
+      ],
+      "fields": [
+        "Doanh nghiệp phuc vu bưu chính",
+        "Ngày bắt đầu hoạt động",
+        "Số giấy phép bưu chính",
+        "Số giấy phép ĐKKD",
+        "Số điện thoại",
+        "Tình trạng hoạt động",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Điểm phục vụ bưu chính",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 479
+      },
+      "sourceFile": "data/geojson/167.geojson"
+    },
+    {
+      "id": 179,
+      "name": "Trạm BTS 5G",
+      "geometry": "Point",
+      "categoryIds": [
+        "bcvt"
+      ],
+      "primaryCategoryId": "bcvt",
+      "featureCount": 915,
+      "available": true,
+      "file": "/data/layers/179.geojson",
+      "table": "bcvt.tram_5g",
+      "sourceFeatureCount": 915,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.697,
+        9.55209,
+        106.7656,
+        10.33547
+      ],
+      "fields": [
+        "Trạm 5G",
+        "Tên doanh nghiệp",
+        "Tên trạm BTS",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ lắp đặt"
+      ],
+      "geometryCounts": {
+        "Point": 915
+      },
+      "sourceFile": "data/geojson/179.geojson"
+    },
+    {
+      "id": 219,
+      "name": "Cơ sở chăn nuôi bò",
+      "geometry": "Point",
+      "categoryIds": [
+        "thu_y"
+      ],
+      "primaryCategoryId": "thu_y",
+      "featureCount": 294,
+      "available": true,
+      "file": "/data/layers/219.geojson",
+      "table": "thu_y.co_so_chan_nuoi_bo",
+      "sourceFeatureCount": 295,
+      "invalidGeometryCount": 1,
+      "bounds": [
+        105.774955,
+        9.945339,
+        106.223249,
+        10.266407
+      ],
+      "fields": [
+        "Bò cái sinh sản",
+        "Bò thịt",
+        "Tên cơ sở",
+        "Tổng đàn",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 294
+      },
+      "sourceFile": "data/geojson/219.geojson"
+    },
+    {
+      "id": 243,
+      "name": "Trạm cấp nước",
+      "geometry": "Point",
+      "categoryIds": [
+        "nuoc_sach"
+      ],
+      "primaryCategoryId": "nuoc_sach",
+      "featureCount": 93,
+      "available": true,
+      "file": "/data/layers/243.geojson",
+      "table": "nuoc_sach.tram_cap_nuoc",
+      "sourceFeatureCount": 95,
+      "invalidGeometryCount": 2,
+      "bounds": [
+        105.7102058,
+        9.9130153,
+        106.2308566,
+        10.3104485
+      ],
+      "fields": [
+        "Công nghệ",
+        "Công suất thiết kế",
+        "Mã trạm",
+        "Ngày cải tạo",
+        "Ngày hoạt động",
+        "Người quản lý",
+        "Trạng thái",
+        "Tên dự án",
+        "Tên trạm",
+        "Tổng chiều dài tuyến ống (km)",
+        "Tổng số đồng hồ",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id"
+      ],
+      "geometryCounts": {
+        "Point": 93
+      },
+      "sourceFile": "data/geojson/243.geojson"
+    },
+    {
+      "id": 244,
+      "name": "Tuyến ống",
+      "geometry": "LineString",
+      "categoryIds": [
+        "nuoc_sach"
+      ],
+      "primaryCategoryId": "nuoc_sach",
+      "featureCount": 4328,
+      "available": true,
+      "file": "/data/layers/244.geojson",
+      "table": "nuoc_sach.tuyen_ong_1",
+      "sourceFeatureCount": 4328,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.6925213,
+        9.893395,
+        106.2695718,
+        10.3271699
+      ],
+      "fields": [
+        "Chiều dài",
+        "Chất liệu",
+        "Cấp ống",
+        "Loại ống",
+        "Mã trạm",
+        "Ngày lắp đặt",
+        "Nhà sản xuất",
+        "Trạng thái",
+        "Tên dự án",
+        "Tên ống",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Đường kính",
+        "Độ sâu lắp đặt"
+      ],
+      "geometryCounts": {
+        "LineString": 4328
+      },
+      "sourceFile": "data/geojson/244.geojson"
+    },
+    {
+      "id": 245,
+      "name": "Trạm cấp nước tư nhân",
+      "geometry": "Point",
+      "categoryIds": [
+        "thuy_loi"
+      ],
+      "primaryCategoryId": "thuy_loi",
+      "featureCount": 11,
+      "available": true,
+      "file": "/data/layers/245.geojson",
+      "table": "thuy_loi.tram_cap_nuoc_tu_nhan_1",
+      "sourceFeatureCount": 11,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.688343,
+        10.003751,
+        106.15465,
+        10.2738325
+      ],
+      "fields": [
+        "Công suất",
+        "Nguồn nước",
+        "Người quản lý",
+        "Số điện thoại",
+        "Tên trạm",
+        "Tình trạng hoạt động",
+        "Tỷ lệ hộ sử dụng",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa điểm"
+      ],
+      "geometryCounts": {
+        "Point": 11
+      },
+      "sourceFile": "data/geojson/245.geojson"
+    },
+    {
+      "id": 247,
+      "name": "Vị trí sạt lở",
+      "geometry": "LineString",
+      "categoryIds": [
+        "thuy_loi"
+      ],
+      "primaryCategoryId": "thuy_loi",
+      "featureCount": 37,
+      "available": true,
+      "file": "/data/layers/247.geojson",
+      "table": "thuy_loi.vi_tri_sat_lo_2",
+      "sourceFeatureCount": 37,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.685653,
+        9.913242,
+        106.187525,
+        10.2836859
+      ],
+      "fields": [
+        "Chiều dài",
+        "Chiều rộng",
+        "Chiều sâu",
+        "Diện tích sạt lở",
+        "Ghi chú",
+        "Mức độ",
+        "Năm sạt lỡ",
+        "Thuộc tuyến sông rạch",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Điểm cuối",
+        "Điểm đầu",
+        "Địa danh"
+      ],
+      "geometryCounts": {
+        "LineString": 37
+      },
+      "sourceFile": "data/geojson/247.geojson"
+    },
+    {
+      "id": 248,
+      "name": "Hệ thống trạm bơm",
+      "geometry": "Point",
+      "categoryIds": [
+        "thuy_loi"
+      ],
+      "primaryCategoryId": "thuy_loi",
+      "featureCount": 3,
+      "available": true,
+      "file": "/data/layers/248.geojson",
+      "table": "thuy_loi.he_thong_tram_bom_1",
+      "sourceFeatureCount": 3,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        106.1968088,
+        10.0116134,
+        106.205825,
+        10.0743556
+      ],
+      "fields": [
+        "Công suất bơm thiết kế",
+        "Công suất bơm thực tế",
+        "Diện tích phục vụ",
+        "Ghi chú",
+        "Hiện trạng",
+        "Năm xây dựng",
+        "Số máy bơm",
+        "Tên trạm",
+        "Vị trí",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id"
+      ],
+      "geometryCounts": {
+        "Point": 3
+      },
+      "sourceFile": "data/geojson/248.geojson"
+    },
+    {
+      "id": 249,
+      "name": "Kênh",
+      "geometry": "LineString",
+      "categoryIds": [
+        "thuy_loi"
+      ],
+      "primaryCategoryId": "thuy_loi",
+      "featureCount": 59,
+      "available": true,
+      "file": "/data/layers/249.geojson",
+      "table": "thuy_loi.kenh_1",
+      "sourceFeatureCount": 59,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.6850004,
+        9.9025011,
+        106.2324715,
+        10.3161943
+      ],
+      "fields": [
+        "Bề rộng đáy",
+        "Chiều dài",
+        "Chiều rộng mặt",
+        "Ghi chú",
+        "Năm xây dựng",
+        "Phân cấp",
+        "Tên kênh",
+        "Tình trạng hoạt động",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "LineString": 59
+      },
+      "sourceFile": "data/geojson/249.geojson"
+    },
+    {
+      "id": 250,
+      "name": "Kè",
+      "geometry": "LineString",
+      "categoryIds": [
+        "thuy_loi"
+      ],
+      "primaryCategoryId": "thuy_loi",
+      "featureCount": 10,
+      "available": true,
+      "file": "/data/layers/250.geojson",
+      "table": "thuy_loi.ke_bao_ve_bo_song__kenh",
+      "sourceFeatureCount": 10,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.8225441,
+        9.9620998,
+        106.1127591,
+        10.2754033
+      ],
+      "fields": [
+        "Chiều dài",
+        "Ghi chú",
+        "Kết cấu kè",
+        "Năm xây dựng",
+        "Tên kè",
+        "Tình trạng hoạt động",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "LineString": 10
+      },
+      "sourceFile": "data/geojson/250.geojson"
+    },
+    {
+      "id": 251,
+      "name": "Đê",
+      "geometry": "LineString",
+      "categoryIds": [
+        "thuy_loi"
+      ],
+      "primaryCategoryId": "thuy_loi",
+      "featureCount": 121,
+      "available": true,
+      "file": "/data/layers/251.geojson",
+      "table": "thuy_loi.de_1",
+      "sourceFeatureCount": 121,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.6852579,
+        9.9018145,
+        106.2733269,
+        10.3276044
+      ],
+      "fields": [
+        "Chiều dài",
+        "Chiều rộng",
+        "Ghi chú",
+        "Kết cấu",
+        "Năm xây dựng",
+        "Phân cấp đê",
+        "Tên đê",
+        "Tình trạng hoạt động",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "LineString": 121
+      },
+      "sourceFile": "data/geojson/251.geojson"
+    },
+    {
+      "id": 252,
+      "name": "Đập",
+      "geometry": "Point",
+      "categoryIds": [
+        "thuy_loi"
+      ],
+      "primaryCategoryId": "thuy_loi",
+      "featureCount": 3,
+      "available": true,
+      "file": "/data/layers/252.geojson",
+      "table": "thuy_loi.dap_1",
+      "sourceFeatureCount": 3,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.979375,
+        10.135728,
+        106.012361,
+        10.242325
+      ],
+      "fields": [
+        "Chiều dài",
+        "Chiều rộng mặt",
+        "Ghi chú",
+        "Kết cấu",
+        "Năm xây dựng",
+        "Phân cấp",
+        "Tên đập",
+        "Tình trạng",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa điểm"
+      ],
+      "geometryCounts": {
+        "Point": 3
+      },
+      "sourceFile": "data/geojson/252.geojson"
+    },
+    {
+      "id": 253,
+      "name": "Bơm điện",
+      "geometry": "Point",
+      "categoryIds": [
+        "nuoc_sach"
+      ],
+      "primaryCategoryId": "nuoc_sach",
+      "featureCount": 92,
+      "available": true,
+      "file": "/data/layers/253.geojson",
+      "table": "nuoc_sach.bom_dien_1",
+      "sourceFeatureCount": 93,
+      "invalidGeometryCount": 1,
+      "bounds": [
+        105.7102058,
+        9.9119417,
+        106.2313525,
+        10.3104485
+      ],
+      "fields": [
+        "Công suất sử dụng",
+        "Cột áp (m)",
+        "Loại bơm ",
+        "Lưu lượng(m3/h)",
+        "Mã số",
+        "Ngày lắp đặt",
+        "Ngày thay ",
+        "Nhà sản xuất",
+        "Quá trình sử dụng",
+        "Số lượng",
+        "Tên trạm",
+        "Tủ điện",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id"
+      ],
+      "geometryCounts": {
+        "Point": 92
+      },
+      "sourceFile": "data/geojson/253.geojson"
+    },
+    {
+      "id": 254,
+      "name": "Công trình thu",
+      "geometry": "Point",
+      "categoryIds": [
+        "nuoc_sach"
+      ],
+      "primaryCategoryId": "nuoc_sach",
+      "featureCount": 92,
+      "available": true,
+      "file": "/data/layers/254.geojson",
+      "table": "nuoc_sach.cong_trinh_thu_1",
+      "sourceFeatureCount": 92,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.7100362,
+        9.9116099,
+        106.2314147,
+        10.3104383
+      ],
+      "fields": [
+        "Ghi chú",
+        "Loại công trình thu",
+        "Ngày lắp đặt",
+        "Quá trình sử dụng",
+        "Tên trạm",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "toa_do_x",
+        "toa_do_y",
+        "Điểm thu nước",
+        "Đường kính"
+      ],
+      "geometryCounts": {
+        "Point": 92
+      },
+      "sourceFile": "data/geojson/254.geojson"
+    },
+    {
+      "id": 256,
+      "name": "Đồng hồ khách hàng",
+      "geometry": "Point",
+      "categoryIds": [
+        "nuoc_sach"
+      ],
+      "primaryCategoryId": "nuoc_sach",
+      "featureCount": 5708,
+      "available": true,
+      "file": "/data/layers/256.geojson",
+      "table": "nuoc_sach.dong_ho_khach_hang_1",
+      "sourceFeatureCount": 5710,
+      "invalidGeometryCount": 2,
+      "bounds": [
+        105.6958076,
+        9.9160097,
+        106.266754,
+        10.624219
+      ],
+      "fields": [
+        "Kích thước đồng hồ",
+        "Loại đồng hồ",
+        "Mã khách hàng",
+        "Ngày kiểm định",
+        "Ngày lắp đặt",
+        "Nhà sản xuất",
+        "Phí BVMT",
+        "Số Seri đồng hồ",
+        "Số điện thoại",
+        "Trạng thái",
+        "Tên khách hàng",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ",
+        "Đối tượng"
+      ],
+      "geometryCounts": {
+        "Point": 5708
+      },
+      "sourceFile": "data/geojson/256.geojson"
+    },
+    {
+      "id": 257,
+      "name": "Đồng hồ tổng nước sạch",
+      "geometry": "Point",
+      "categoryIds": [
+        "nuoc_sach"
+      ],
+      "primaryCategoryId": "nuoc_sach",
+      "featureCount": 92,
+      "available": true,
+      "file": "/data/layers/257.geojson",
+      "table": "nuoc_sach.dong_ho_tong_nuoc_sach_1",
+      "sourceFeatureCount": 93,
+      "invalidGeometryCount": 1,
+      "bounds": [
+        105.7102058,
+        9.9119417,
+        106.2313525,
+        10.3104485
+      ],
+      "fields": [
+        "Chỉ số cuối kỳ",
+        "Chỉ số đầu kỳ",
+        "Kích thước đồng hồ",
+        "Loại đồng hồ",
+        "Ngày lắp đặt",
+        "Ngày thay đồng hồ",
+        "Nhà sản xuất",
+        "Nước sản xuất",
+        "Số Seri đồng hồ",
+        "Trạm cấp nước",
+        "Trạng thái",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "toa_do_x",
+        "toa_do_y",
+        "Áp lực tối thiểu",
+        "Áp lực tối đa"
+      ],
+      "geometryCounts": {
+        "Point": 92
+      },
+      "sourceFile": "data/geojson/257.geojson"
+    },
+    {
+      "id": 258,
+      "name": "Đồng hồ tổng nước thô",
+      "geometry": "Point",
+      "categoryIds": [
+        "nuoc_sach"
+      ],
+      "primaryCategoryId": "nuoc_sach",
+      "featureCount": 52,
+      "available": true,
+      "file": "/data/layers/258.geojson",
+      "table": "nuoc_sach.dong_ho_tong_nuoc_tho",
+      "sourceFeatureCount": 52,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.7296041,
+        9.9524503,
+        106.2313525,
+        10.2716846
+      ],
+      "fields": [
+        "Chỉ số cuối kỳ",
+        "Chỉ số đầu kỳ",
+        "Kích thước đồng hồ",
+        "Loại đồng hồ",
+        "Ngày lắp đặt",
+        "Ngày thay đồng hồ",
+        "Nhà sản xuất",
+        "Nước khai thác",
+        "Số Seri đồng hồ",
+        "Trạm cấp nước",
+        "Trạng thái",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Áp lực tối thiểu",
+        "Áp lực tối đa"
+      ],
+      "geometryCounts": {
+        "Point": 52
+      },
+      "sourceFile": "data/geojson/258.geojson"
+    },
+    {
+      "id": 259,
+      "name": "Van",
+      "geometry": "Point",
+      "categoryIds": [
+        "nuoc_sach"
+      ],
+      "primaryCategoryId": "nuoc_sach",
+      "featureCount": 93,
+      "available": true,
+      "file": "/data/layers/259.geojson",
+      "table": "nuoc_sach.van_1",
+      "sourceFeatureCount": 93,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.7102058,
+        9.9119417,
+        106.2313525,
+        10.3104485
+      ],
+      "fields": [
+        "Chủng loại",
+        "Ghi chú",
+        "Ngày lắp đặt",
+        "Nhà sản xuất",
+        "Trạm cấp nước",
+        "Trạng thái",
+        "Vị trí lắp đặt",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Đường kính"
+      ],
+      "geometryCounts": {
+        "Point": 93
+      },
+      "sourceFile": "data/geojson/259.geojson"
+    },
+    {
+      "id": 260,
+      "name": "Trạm khí tượng thủy văn",
+      "geometry": "Point",
+      "categoryIds": [
+        "thuy_loi"
+      ],
+      "primaryCategoryId": "thuy_loi",
+      "featureCount": 24,
+      "available": true,
+      "file": "/data/layers/260.geojson",
+      "table": "thuy_loi.tram_khi_tuong_thuy_van_1",
+      "sourceFeatureCount": 24,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.688333,
+        9.913889,
+        106.224444,
+        10.296667
+      ],
+      "fields": [
+        "Ghi chú",
+        "Loại trạm",
+        "Năm xây dựng",
+        "Tên trạm",
+        "Vận hành",
+        "Vị trí Km",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id"
+      ],
+      "geometryCounts": {
+        "Point": 24
+      },
+      "sourceFile": "data/geojson/260.geojson"
+    },
+    {
+      "id": 261,
+      "name": "Cống các loại",
+      "geometry": "Point",
+      "categoryIds": [
+        "thuy_loi"
+      ],
+      "primaryCategoryId": "thuy_loi",
+      "featureCount": 53,
+      "available": true,
+      "file": "/data/layers/261.geojson",
+      "table": "thuy_loi.cong_cac_loai_1",
+      "sourceFeatureCount": 53,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.886314,
+        9.9133124,
+        106.2577057,
+        10.2121957
+      ],
+      "fields": [
+        "Cao trình đỉnh cửa van",
+        "Cao độ đáy",
+        "Chiều dài",
+        "Chiều rộng dẫn nước",
+        "Diện tích phục vụ",
+        "Ghi chú",
+        "Kết cấu xây dựng",
+        "Năm xây dựng",
+        "Tên cống",
+        "Tình trạng hoạt động",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 53
+      },
+      "sourceFile": "data/geojson/261.geojson"
+    },
+    {
+      "id": 262,
+      "name": "Phân bón",
+      "geometry": "Point",
+      "categoryIds": [
+        "bvtv"
+      ],
+      "primaryCategoryId": "bvtv",
+      "featureCount": 143,
+      "available": true,
+      "file": "/data/layers/262.geojson",
+      "table": "bvtv.phan_bon",
+      "sourceFeatureCount": 793,
+      "invalidGeometryCount": 650,
+      "bounds": [
+        105.69236,
+        9.94,
+        106.256246,
+        10.32
+      ],
+      "fields": [
+        "Họ và tên",
+        "Tên Đại Lý",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ đại lý"
+      ],
+      "geometryCounts": {
+        "Point": 143
+      },
+      "sourceFile": "data/geojson/262.geojson"
+    },
+    {
+      "id": 263,
+      "name": "Thuốc bảo vệ thực vật",
+      "geometry": "Point",
+      "categoryIds": [
+        "bvtv"
+      ],
+      "primaryCategoryId": "bvtv",
+      "featureCount": 642,
+      "available": true,
+      "file": "/data/layers/263.geojson",
+      "table": "bvtv.thuoc_bao_ve_thuc_vat",
+      "sourceFeatureCount": 1286,
+      "invalidGeometryCount": 644,
+      "bounds": [
+        105.69,
+        9.549282,
+        106.529341,
+        10.32
+      ],
+      "fields": [
+        "Họ và tên",
+        "Tên Đại Lý",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ đại lý"
+      ],
+      "geometryCounts": {
+        "Point": 642
+      },
+      "sourceFile": "data/geojson/263.geojson"
+    },
+    {
+      "id": 267,
+      "name": "Mã số vùng trồng nội địa",
+      "geometry": "Polygon",
+      "categoryIds": [
+        "bvtv"
+      ],
+      "primaryCategoryId": "bvtv",
+      "featureCount": 105,
+      "available": true,
+      "file": "/data/layers/267.geojson",
+      "table": "bvtv.ma_so_vung_trong_noi_dia",
+      "sourceFeatureCount": 105,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.72,
+        9.915484,
+        106.266762,
+        10.25848
+      ],
+      "fields": [
+        "CHỨNG NHẬN ATTP",
+        "DIỆN TÍCH",
+        "LOẠI CÂY",
+        "NGƯỜI ĐẠI DIỆN",
+        "SỐ HỘ",
+        "SỐ ĐIỆN THOẠI",
+        "TÊN VÙNG TRỒNG",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "ĐỊA CHỈ"
+      ],
+      "geometryCounts": {
+        "Polygon": 105
+      },
+      "sourceFile": "data/geojson/267.geojson"
+    },
+    {
+      "id": 268,
+      "name": "Mã số vùng trồng xuất khẩu",
+      "geometry": "Polygon",
+      "categoryIds": [
+        "bvtv"
+      ],
+      "primaryCategoryId": "bvtv",
+      "featureCount": 122,
+      "available": true,
+      "file": "/data/layers/268.geojson",
+      "table": "bvtv.ma_so_vung_trong_xuat_khau",
+      "sourceFeatureCount": 122,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.7221,
+        9.915484,
+        106.240766,
+        10.326836
+      ],
+      "fields": [
+        "NGƯỜI ĐẠI DIỆN ",
+        "SỐ ĐIỆN THOẠI",
+        "TÊN HÀNG HÓA",
+        "TÊN VÙNG TRỒNG",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "ĐỊA CHỈ"
+      ],
+      "geometryCounts": {
+        "Polygon": 122
+      },
+      "sourceFile": "data/geojson/268.geojson"
+    },
+    {
+      "id": 273,
+      "name": "Cơ sở chế biến Thủy sản",
+      "geometry": "Point",
+      "categoryIds": [
+        "thuy_san"
+      ],
+      "primaryCategoryId": "thuy_san",
+      "featureCount": 2,
+      "available": true,
+      "file": "/data/layers/273.geojson",
+      "table": "thuy_san.co_so_che_bien_thuy_san_1",
+      "sourceFeatureCount": 2,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        106.0044621,
+        10.2020058,
+        106.1415664,
+        10.2569744
+      ],
+      "fields": [
+        "Chứng nhận (ISO, HACCP...)",
+        "Ghi chú",
+        "Giấy chứng nhận ĐKKD/ĐKDN",
+        "Mã cơ sở",
+        "Sản phẩm sản xuất",
+        "Số điện thoại liên lạc",
+        "Tên công ty",
+        "Tình trạng hoạt động",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ Website",
+        "Địa chỉ sản xuất"
+      ],
+      "geometryCounts": {
+        "Point": 2
+      },
+      "sourceFile": "data/geojson/273.geojson"
+    },
+    {
+      "id": 274,
+      "name": "Cơ sở nuôi lồng bè",
+      "geometry": "Point",
+      "categoryIds": [
+        "thuy_san"
+      ],
+      "primaryCategoryId": "thuy_san",
+      "featureCount": 221,
+      "available": true,
+      "file": "/data/layers/274.geojson",
+      "table": "thuy_san.co_so_nuoi_long_be_1",
+      "sourceFeatureCount": 222,
+      "invalidGeometryCount": 1,
+      "bounds": [
+        105.878337,
+        10.261212,
+        106.030929,
+        10.328386
+      ],
+      "fields": [
+        "Chủ cơ sở / Người đại diện",
+        "Chứng nhận",
+        "Ghi chú",
+        "Loại hình",
+        "Mã số nhận dạng cơ sở",
+        "Ngày cấp giấy chứng nhận ATTP",
+        "Số giấy chứng nhận ATTP",
+        "Tên cơ sở",
+        "Tình trạng hoạt động",
+        "Tổng số lồng bè",
+        "Tổng thể tích",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ sản xuất"
+      ],
+      "geometryCounts": {
+        "Point": 221
+      },
+      "sourceFile": "data/geojson/274.geojson"
+    },
+    {
+      "id": 275,
+      "name": "Thủy sản quý hiêm",
+      "geometry": "Point",
+      "categoryIds": [
+        "thuy_san"
+      ],
+      "primaryCategoryId": "thuy_san",
+      "featureCount": 9,
+      "available": true,
+      "file": "/data/layers/275.geojson",
+      "table": "thuy_san.thuy_san_quy_hiem_1",
+      "sourceFeatureCount": 9,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.9248558,
+        10.0449497,
+        106.224313,
+        10.2683099
+      ],
+      "fields": [
+        "Mục đích nuôi",
+        "Nguồn gốc",
+        "Số chứng nhận ĐKKD/ĐKDN",
+        "Tên cơ sở",
+        "Tình trạng hoạt động",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ sản xuất",
+        "Địa chỉ trụ sở chính",
+        "Đối tượng thủy sản nuôi"
+      ],
+      "geometryCounts": {
+        "Point": 9
+      },
+      "sourceFile": "data/geojson/275.geojson"
+    },
+    {
+      "id": 276,
+      "name": "Cơ sở sản xuất giống thủy sản",
+      "geometry": "Point",
+      "categoryIds": [
+        "thuy_san"
+      ],
+      "primaryCategoryId": "thuy_san",
+      "featureCount": 135,
+      "available": true,
+      "file": "/data/layers/276.geojson",
+      "table": "thuy_san.co_so_san_xuat_giong_thuy_san",
+      "sourceFeatureCount": 135,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.8663077,
+        9.953356,
+        106.199838,
+        10.297374
+      ],
+      "fields": [
+        "Chứng nhận (ASC, BAP, GlobalGAP, VietGAP...)",
+        "Ghi chú",
+        "Hình thức sản xuất (SXG, ương dưỡng)",
+        "Loại hình",
+        "Ngày cấp giấy chứng nhận",
+        "Số giấy chứng nhận cơ sở đủ điều kiện sản ",
+        "Tên cơ sở",
+        "Tình trạng hoạt động",
+        "Tổng diện tích (m2)",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ sản xuất",
+        "Đối tượng sản xuất",
+        "Đối tượng thủy sản sản xuất"
+      ],
+      "geometryCounts": {
+        "Point": 135
+      },
+      "sourceFile": "data/geojson/276.geojson"
+    },
+    {
+      "id": 277,
+      "name": "Cơ sở nuôi cá tra",
+      "geometry": "Point",
+      "categoryIds": [
+        "thuy_san"
+      ],
+      "primaryCategoryId": "thuy_san",
+      "featureCount": 105,
+      "available": true,
+      "file": "/data/layers/277.geojson",
+      "table": "thuy_san.co_so_nuoi_ca_tra_1",
+      "sourceFeatureCount": 105,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.68697,
+        9.892356,
+        106.26808,
+        10.3241283
+      ],
+      "fields": [
+        "Chưa thả lại (diện tích mặt nước)",
+        "Chủ cơ sở / Người đại diện",
+        "Chứng nhận  (ASC,BAP....)",
+        "Ghi chú",
+        "Kết quả thẩm định theo TT38",
+        "Loại hình",
+        "Mã số nhận diện cơ sở",
+        "Ngày cấp Giấy chứng nhận ATTP ",
+        "Ngày hết hạn Giấy chứng nhận ATTP ",
+        "Ngày thẩm định ",
+        "Sản lượng dự kiến",
+        "Số Giấy chứng nhận ATTP ",
+        "Số lượng ao nuôi",
+        "Tên cơ sở",
+        "Tổng diện tích",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Đang nuôi thả (diện tích mặt nước)",
+        "Địa chỉ sản xuất"
+      ],
+      "geometryCounts": {
+        "Point": 105
+      },
+      "sourceFile": "data/geojson/277.geojson"
+    },
+    {
+      "id": 278,
+      "name": "Cơ sở kinh doanh thức ăn thủy sản",
+      "geometry": "Point",
+      "categoryIds": [
+        "thuy_san"
+      ],
+      "primaryCategoryId": "thuy_san",
+      "featureCount": 23,
+      "available": true,
+      "file": "/data/layers/278.geojson",
+      "table": "thuy_san.co_so_kinh_doanh_thuc_an_thuy_san_1",
+      "sourceFeatureCount": 23,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.693817,
+        9.945311,
+        105.9894526,
+        10.2578577
+      ],
+      "fields": [
+        "Chủ cơ sở/ Người đại diện",
+        "Ghi chú",
+        "Sản phẩm kinh doanh",
+        "Số giấy chứng nhận ĐKKD/ĐKDN",
+        "Tên cơ sở",
+        "Tình trạng hoạt động",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ kinh doanh"
+      ],
+      "geometryCounts": {
+        "Point": 23
+      },
+      "sourceFile": "data/geojson/278.geojson"
+    },
+    {
+      "id": 279,
+      "name": "Cở sở sản xuất thức ăn Thủy sản XLMT",
+      "geometry": "Point",
+      "categoryIds": [
+        "thuy_san"
+      ],
+      "primaryCategoryId": "thuy_san",
+      "featureCount": 10,
+      "available": true,
+      "file": "/data/layers/279.geojson",
+      "table": "thuy_san.co_so_san_xuat_thuc_an_thuy_san_xlmt_1",
+      "sourceFeatureCount": 10,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.816691,
+        10.036725,
+        106.089923,
+        10.243298
+      ],
+      "fields": [
+        "Chủ cơ sở/ Người đại diện",
+        "Chứng nhận (ISO, HACCP...)",
+        "Ghi chú",
+        "Ngày cấp GCN",
+        "Sản lượng dự kiến (tấn/năm)",
+        "Sản phẩm sản xuất",
+        "Số giấy chứng nhận",
+        "Số giấy chứng nhận ĐKKD/ĐKDN",
+        "Tên công ty",
+        "Tình trạng hoạt động",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ sản xuất",
+        "Địa chỉ trụ sở chính"
+      ],
+      "geometryCounts": {
+        "Point": 10
+      },
+      "sourceFile": "data/geojson/279.geojson"
+    },
+    {
+      "id": 280,
+      "name": "Thủy sản có giá trị kinh tế",
+      "geometry": "Point",
+      "categoryIds": [
+        "thuy_san"
+      ],
+      "primaryCategoryId": "thuy_san",
+      "featureCount": 143,
+      "available": true,
+      "file": "/data/layers/280.geojson",
+      "table": "thuy_san.thuy_san_co_gia_tri_kinh_te_1",
+      "sourceFeatureCount": 143,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.713458,
+        9.922817,
+        106.217901,
+        10.3129794
+      ],
+      "fields": [
+        "Chủ cơ sở/Người đại diện",
+        "Chứng nhận(ASC,BAP, VietGAP,...)",
+        "Ghi chú",
+        "Loại hình(Doanh nghiệp, HTX, Hộ nuôi,...)",
+        "Tên cơ sở",
+        "Tình trạng hoạt động",
+        "Tổng diện tích mặt nước (m2)",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ sản xuất",
+        "Đối tượng nuôi"
+      ],
+      "geometryCounts": {
+        "Point": 143
+      },
+      "sourceFile": "data/geojson/280.geojson"
+    },
+    {
+      "id": 285,
+      "name": "HTX Thủy sản",
+      "geometry": "Point",
+      "categoryIds": [
+        "sokhdt"
+      ],
+      "primaryCategoryId": "sokhdt",
+      "featureCount": 6,
+      "available": true,
+      "file": "/data/layers/285.geojson",
+      "table": "sokhdt.htx_thuy_san",
+      "sourceFeatureCount": 6,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.8966635,
+        9.9475297,
+        106.1600659,
+        10.313073
+      ],
+      "fields": [
+        "CT. HĐQT - Giám Đốc",
+        "Lĩnh vực",
+        "Ngày thành lập",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Điện thoại",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 6
+      },
+      "sourceFile": "data/geojson/285.geojson"
+    },
+    {
+      "id": 286,
+      "name": "HTX Công nghiệp",
+      "geometry": "Point",
+      "categoryIds": [
+        "sokhdt"
+      ],
+      "primaryCategoryId": "sokhdt",
+      "featureCount": 18,
+      "available": true,
+      "file": "/data/layers/286.geojson",
+      "table": "sokhdt.htx_cong_nghiep",
+      "sourceFeatureCount": 18,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.8009059,
+        9.9690445,
+        106.2232626,
+        10.2571464
+      ],
+      "fields": [
+        "CT.HĐQT-Giám Đốc",
+        "Lĩnh vực",
+        "Ngày thành lập",
+        "Số điện thoại",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 18
+      },
+      "sourceFile": "data/geojson/286.geojson"
+    },
+    {
+      "id": 287,
+      "name": "HTX Xây dựng",
+      "geometry": "Point",
+      "categoryIds": [
+        "sokhdt"
+      ],
+      "primaryCategoryId": "sokhdt",
+      "featureCount": 17,
+      "available": true,
+      "file": "/data/layers/287.geojson",
+      "table": "sokhdt.htx_xay_dung",
+      "sourceFeatureCount": 17,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.7699182,
+        10.0193392,
+        106.231993,
+        10.2586327
+      ],
+      "fields": [
+        "CT.HĐQT-Giám Đốc",
+        "Lĩnh vực",
+        "Ngày thành lập",
+        "Số điện thoại",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 17
+      },
+      "sourceFile": "data/geojson/287.geojson"
+    },
+    {
+      "id": 288,
+      "name": "Doanh nghiệp",
+      "geometry": "Point",
+      "categoryIds": [
+        "sokhdt"
+      ],
+      "primaryCategoryId": "sokhdt",
+      "featureCount": 984,
+      "available": true,
+      "file": "/data/layers/288.geojson",
+      "table": "sokhdt.doanh_nghiep",
+      "sourceFeatureCount": 984,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.7239032,
+        9.5942017,
+        106.7338958,
+        10.3354562
+      ],
+      "fields": [
+        "Chủ sở hữu",
+        "Mã số doanh nghiệp",
+        "Người đại diện theo pháp luật",
+        "Tên doanh nghiệp",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ trụ sở chính"
+      ],
+      "geometryCounts": {
+        "Point": 984
+      },
+      "sourceFile": "data/geojson/288.geojson"
+    },
+    {
+      "id": 289,
+      "name": "Rau màu CSKDG",
+      "geometry": "Point",
+      "categoryIds": [
+        "bvtv"
+      ],
+      "primaryCategoryId": "bvtv",
+      "featureCount": 37,
+      "available": true,
+      "file": "/data/layers/289.geojson",
+      "table": "bvtv.rau_mau_cskhg_1",
+      "sourceFeatureCount": 46,
+      "invalidGeometryCount": 9,
+      "bounds": [
+        105.696182,
+        10.041053,
+        106.199097,
+        10.21299
+      ],
+      "fields": [
+        "Người đại diện",
+        "Sản Xuất, Kinh Doanh, Sản Xuất + Kinh Doanh",
+        "Tên cơ sở ",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ giao dịch"
+      ],
+      "geometryCounts": {
+        "Point": 37
+      },
+      "sourceFile": "data/geojson/289.geojson"
+    },
+    {
+      "id": 290,
+      "name": "Cây ăn trái CSKDG",
+      "geometry": "Point",
+      "categoryIds": [
+        "bvtv"
+      ],
+      "primaryCategoryId": "bvtv",
+      "featureCount": 28,
+      "available": true,
+      "file": "/data/layers/290.geojson",
+      "table": "bvtv.cay_an_trai_cskdg_1",
+      "sourceFeatureCount": 80,
+      "invalidGeometryCount": 52,
+      "bounds": [
+        105.88285,
+        9.99402,
+        106.21808,
+        10.307337
+      ],
+      "fields": [
+        "Lĩnh vực SX,KD,KD+SX",
+        "Người đại diện",
+        "Tên cơ sở ",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ giao dịch"
+      ],
+      "geometryCounts": {
+        "Point": 28
+      },
+      "sourceFile": "data/geojson/290.geojson"
+    },
+    {
+      "id": 291,
+      "name": "Lúa CSKDG",
+      "geometry": "Point",
+      "categoryIds": [
+        "bvtv"
+      ],
+      "primaryCategoryId": "bvtv",
+      "featureCount": 87,
+      "available": true,
+      "file": "/data/layers/291.geojson",
+      "table": "bvtv.lua_cskdg_1",
+      "sourceFeatureCount": 124,
+      "invalidGeometryCount": 37,
+      "bounds": [
+        105.8862207,
+        10.021295,
+        106.2,
+        10.240814
+      ],
+      "fields": [
+        "Lĩnh vực SX,KD,KD+SX",
+        "Người đại diện",
+        "Tên cơ sở ",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ giao dịch"
+      ],
+      "geometryCounts": {
+        "Point": 87
+      },
+      "sourceFile": "data/geojson/291.geojson"
+    },
+    {
+      "id": 292,
+      "name": "Lúa CSSXĐTC",
+      "geometry": "Point",
+      "categoryIds": [
+        "bvtv"
+      ],
+      "primaryCategoryId": "bvtv",
+      "featureCount": 2,
+      "available": true,
+      "file": "/data/layers/292.geojson",
+      "table": "bvtv.lua_cssxdtc_1",
+      "sourceFeatureCount": 2,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        106.185226,
+        10.028846,
+        106.1911798,
+        10.0300384
+      ],
+      "fields": [
+        "Diện tích chứng nhận hữu cơ",
+        "Tổ chức",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa  chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 2
+      },
+      "sourceFile": "data/geojson/292.geojson"
+    },
+    {
+      "id": 293,
+      "name": "Cây màu CSSXĐTC",
+      "geometry": "Point",
+      "categoryIds": [
+        "bvtv"
+      ],
+      "primaryCategoryId": "bvtv",
+      "featureCount": 2,
+      "available": true,
+      "file": "/data/layers/293.geojson",
+      "table": "bvtv.cay_mau_cssxdtc_1",
+      "sourceFeatureCount": 2,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.7451,
+        10.1468,
+        105.7929,
+        10.1551
+      ],
+      "fields": [
+        "Cây trồng",
+        "Diện tích (ha)",
+        "Tên tổ chức, cá nhân được chứng nhận",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa điểm"
+      ],
+      "geometryCounts": {
+        "Point": 2
+      },
+      "sourceFile": "data/geojson/293.geojson"
+    },
+    {
+      "id": 294,
+      "name": "Cây ăn trái CSSXĐTC",
+      "geometry": "Point",
+      "categoryIds": [
+        "bvtv"
+      ],
+      "primaryCategoryId": "bvtv",
+      "featureCount": 1,
+      "available": true,
+      "file": "/data/layers/294.geojson",
+      "table": "bvtv.cay_an_trai_cssxdtc_1",
+      "sourceFeatureCount": 1,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        106.131054,
+        10.045511,
+        106.131054,
+        10.045511
+      ],
+      "fields": [
+        "Cây trồng",
+        "Diện tích (ha)",
+        "Tên tổ chức",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa điểm"
+      ],
+      "geometryCounts": {
+        "Point": 1
+      },
+      "sourceFile": "data/geojson/294.geojson"
+    },
+    {
+      "id": 298,
+      "name": "Cơ sở thu gom động vật",
+      "geometry": "Point",
+      "categoryIds": [
+        "thu_y"
+      ],
+      "primaryCategoryId": "thu_y",
+      "featureCount": 8,
+      "available": true,
+      "file": "/data/layers/298.geojson",
+      "table": "thu_y.co_so_thu_gom_dong_vat",
+      "sourceFeatureCount": 8,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.877575,
+        10.025646,
+        106.175312,
+        10.24662
+      ],
+      "fields": [
+        "Công suất Thực tế (con/ngày)",
+        "Công suất thiết kế (con/ngày)",
+        "Họ tên chủ cơ sở",
+        "Kết quả thẩm định",
+        "Ngày cấp giấy chứng nhận điều kiện VSTY ",
+        "Ngày thẩm định",
+        "Số cấp giấy chứng nhận điều kiện VSTY ",
+        "Tên cơ sở  sản xuất kinh doanh",
+        "Tình trạng hoạt động",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ",
+        "Động vật thu gom"
+      ],
+      "geometryCounts": {
+        "Point": 8
+      },
+      "sourceFile": "data/geojson/298.geojson"
+    },
+    {
+      "id": 299,
+      "name": "Ổ dịch ASF",
+      "geometry": "Point",
+      "categoryIds": [
+        "thu_y"
+      ],
+      "primaryCategoryId": "thu_y",
+      "featureCount": 5,
+      "available": true,
+      "file": "/data/layers/299.geojson",
+      "table": "thu_y.o_dich_asf_1",
+      "sourceFeatureCount": 5,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.8673124,
+        9.9502,
+        106.0056333,
+        10.2109
+      ],
+      "fields": [
+        "Bệnh dịch",
+        "Loài",
+        "Mã Phường/Xã",
+        "Mã Quận/Huyện",
+        "Ngày cập nhật cuối",
+        "Ngày phát hiện",
+        "Phường/Xã",
+        "Quận/huyện",
+        "Số chết",
+        "Số hộ",
+        "Số hủy",
+        "Số thôn",
+        "Số ốm",
+        "Tổng đàn",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id"
+      ],
+      "geometryCounts": {
+        "Point": 5
+      },
+      "sourceFile": "data/geojson/299.geojson"
+    },
+    {
+      "id": 303,
+      "name": "Cây đầu dòng và vườn cây đầu dòng",
+      "geometry": "Point",
+      "categoryIds": [
+        "bvtv"
+      ],
+      "primaryCategoryId": "bvtv",
+      "featureCount": 9,
+      "available": true,
+      "file": "/data/layers/303.geojson",
+      "table": "bvtv.cay_dau_dong_va_vuon_cay_dau_dong_1",
+      "sourceFeatureCount": 9,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.9488742,
+        10.1630466,
+        106.011301,
+        10.3051
+      ],
+      "fields": [
+        "Cây đầu dòng",
+        "Họ và tên ",
+        "Vườn cây đầu dòng",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 9
+      },
+      "sourceFile": "data/geojson/303.geojson"
+    },
+    {
+      "id": 304,
+      "name": "Cơ sở chăn nuôi dê",
+      "geometry": "Point",
+      "categoryIds": [
+        "thu_y"
+      ],
+      "primaryCategoryId": "thu_y",
+      "featureCount": 2,
+      "available": true,
+      "file": "/data/layers/304.geojson",
+      "table": "thu_y.co_so_chan_nuoi_de",
+      "sourceFeatureCount": 2,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.880206,
+        10.030164,
+        105.909526,
+        10.25588
+      ],
+      "fields": [
+        "Dê sinh sản",
+        "Dê thịt",
+        "Tên cơ sở",
+        "Tổng đàn ",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 2
+      },
+      "sourceFile": "data/geojson/304.geojson"
+    },
+    {
+      "id": 305,
+      "name": "Cơ sở chăn nuôi vịt",
+      "geometry": "Point",
+      "categoryIds": [
+        "thu_y"
+      ],
+      "primaryCategoryId": "thu_y",
+      "featureCount": 109,
+      "available": true,
+      "file": "/data/layers/305.geojson",
+      "table": "thu_y.co_so_chan_nuoi_vit",
+      "sourceFeatureCount": 109,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.754878,
+        9.952937,
+        106.219875,
+        10.2360329
+      ],
+      "fields": [
+        "Tên cơ sở",
+        "Tổng đàn",
+        "Vịt thịt",
+        "Vịt đẻ",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 109
+      },
+      "sourceFile": "data/geojson/305.geojson"
+    },
+    {
+      "id": 307,
+      "name": "Khu Kinh tế và Công nghiệp",
+      "geometry": "Point",
+      "categoryIds": [
+        "banqlkcn"
+      ],
+      "primaryCategoryId": "banqlkcn",
+      "featureCount": 23,
+      "available": true,
+      "file": "/data/layers/307.geojson",
+      "table": "banqlkcn.quan_li_cac_khu_cong_nghiep",
+      "sourceFeatureCount": 23,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.789004,
+        9.6330457,
+        106.482905,
+        10.3044207
+      ],
+      "fields": [
+        "Diện tích",
+        "Thông tin",
+        "Trạng thái",
+        "Tên khu công nghiệp",
+        "Vị trí",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa điểm"
+      ],
+      "geometryCounts": {
+        "Point": 23
+      },
+      "sourceFile": "data/geojson/307.geojson"
+    },
+    {
+      "id": 308,
+      "name": "Các tổ chức Khoa học công nghệ",
+      "geometry": "Point",
+      "categoryIds": [
+        "sokhcn"
+      ],
+      "primaryCategoryId": "sokhcn",
+      "featureCount": 42,
+      "available": true,
+      "file": "/data/layers/308.geojson",
+      "table": "sokhcn.cac_to_chuc_khoa_hoc_cong_nghe",
+      "sourceFeatureCount": 42,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.9259626,
+        9.6094928,
+        106.4475303,
+        10.2828313
+      ],
+      "fields": [
+        "Cơ quan chủ quản",
+        "Cơ quan quản lý trực tiếp",
+        "Loại hình kinh tế",
+        "Mã số thuế",
+        "Tên tổ chức khoa học và công nghệ",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Điện thoại",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 42
+      },
+      "sourceFile": "data/geojson/308.geojson"
+    },
+    {
+      "id": 311,
+      "name": "Trường Mầm non, Mẫu giáo",
+      "geometry": "Point",
+      "categoryIds": [
+        "sogddt"
+      ],
+      "primaryCategoryId": "sogddt",
+      "featureCount": 374,
+      "available": true,
+      "file": "/data/layers/311.geojson",
+      "table": "sogddt.truong_mam_non__mau_giao",
+      "sourceFeatureCount": 374,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.7140166,
+        9.5540671,
+        106.762323,
+        10.3281758
+      ],
+      "fields": [
+        "Hiệu trưởng",
+        "Loại hình",
+        "Quy mô",
+        "Số điện thoại trường",
+        "Thư điện tử",
+        "Trường Mầm Non, Mẫu Giáo",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Điện thoại hiệu trưởng",
+        "Đơn vị quản lý",
+        "Đạt CQG (MĐ)",
+        "Địa chỉ trường",
+        "Địa chỉ web trường"
+      ],
+      "geometryCounts": {
+        "Point": 374
+      },
+      "sourceFile": "data/geojson/311.geojson"
+    },
+    {
+      "id": 312,
+      "name": "Trường Tiểu học",
+      "geometry": "Point",
+      "categoryIds": [
+        "sogddt"
+      ],
+      "primaryCategoryId": "sogddt",
+      "featureCount": 451,
+      "available": true,
+      "file": "/data/layers/312.geojson",
+      "table": "sogddt.truong_tieu_hoc",
+      "sourceFeatureCount": 471,
+      "invalidGeometryCount": 20,
+      "bounds": [
+        105.706268,
+        9.551433,
+        106.744745,
+        10.330039
+      ],
+      "fields": [
+        "Cấp học",
+        "Loại hình",
+        "Số điện thoại trường",
+        "Trường tiểu học",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Đạt CQG (MĐ)",
+        "Địa chỉ trường"
+      ],
+      "geometryCounts": {
+        "Point": 451
+      },
+      "sourceFile": "data/geojson/312.geojson"
+    },
+    {
+      "id": 313,
+      "name": "Trường THCS",
+      "geometry": "Point",
+      "categoryIds": [
+        "sogddt"
+      ],
+      "primaryCategoryId": "sogddt",
+      "featureCount": 323,
+      "available": true,
+      "file": "/data/layers/313.geojson",
+      "table": "sogddt.truong_thcs",
+      "sourceFeatureCount": 331,
+      "invalidGeometryCount": 8,
+      "bounds": [
+        105.6931757,
+        9.55248,
+        106.7596113,
+        10.326212
+      ],
+      "fields": [
+        "Hiệu trưởng",
+        "Loại hình",
+        "Loại trường",
+        "Số điện thoại Hiệu trưởng",
+        "Số điện thoại trường",
+        "Thư điện tử",
+        "Trường THCS",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Đơn vị quản lý",
+        "Đạt CQG (MĐ)",
+        "Địa chỉ  trường",
+        "Địa chỉ web trường"
+      ],
+      "geometryCounts": {
+        "Point": 323
+      },
+      "sourceFile": "data/geojson/313.geojson"
+    },
+    {
+      "id": 315,
+      "name": "Trung tâm GDNN - GDTX",
+      "geometry": "Point",
+      "categoryIds": [
+        "sogddt"
+      ],
+      "primaryCategoryId": "sogddt",
+      "featureCount": 22,
+      "available": true,
+      "file": "/data/layers/315.geojson",
+      "table": "sogddt.trung_tam_gdnn__gdtx",
+      "sourceFeatureCount": 22,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.9802546,
+        9.6633424,
+        106.686035,
+        10.2993359
+      ],
+      "fields": [
+        "Hiệu trưởng",
+        "Loại hình",
+        "Loại trường",
+        "Số điện thoại trường",
+        "Thư điện tử",
+        "Trung tâm GDNN, GDTX",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Điện thoại hiệu trưởng",
+        "Đạt CQG (MĐ)",
+        "Địa chỉ",
+        "Địa chỉ web trường"
+      ],
+      "geometryCounts": {
+        "Point": 22
+      },
+      "sourceFile": "data/geojson/315.geojson"
+    },
+    {
+      "id": 316,
+      "name": "Trường THPT",
+      "geometry": "Point",
+      "categoryIds": [
+        "sogddt"
+      ],
+      "primaryCategoryId": "sogddt",
+      "featureCount": 109,
+      "available": true,
+      "file": "/data/layers/316.geojson",
+      "table": "sogddt.truong_thpt_3",
+      "sourceFeatureCount": 111,
+      "invalidGeometryCount": 2,
+      "bounds": [
+        105.718946,
+        9.6011159,
+        106.710086,
+        10.309528
+      ],
+      "fields": [
+        "Hiệu trưởng",
+        "Loại hình",
+        "Loại trường",
+        "Số điện thoại trường   ",
+        "Thư điện tử",
+        "Trường THPT",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Điện thoại hiệu trưởng",
+        "Đạt CQG (MĐ)\t",
+        "Địa chỉ trường",
+        "Địa chỉ web trường"
+      ],
+      "geometryCounts": {
+        "Point": 109
+      },
+      "sourceFile": "data/geojson/316.geojson"
+    },
+    {
+      "id": 317,
+      "name": "QH Trường Mầm non, Mẫu giáo",
+      "geometry": "Point",
+      "categoryIds": [
+        "sogddt_quyhoach"
+      ],
+      "primaryCategoryId": "sogddt_quyhoach",
+      "featureCount": 123,
+      "available": true,
+      "file": "/data/layers/317.geojson",
+      "table": "sogddt_quyhoach.truong_mam_non__mau_giao",
+      "sourceFeatureCount": 123,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.705223,
+        9.916287,
+        106.2501468,
+        10.303853
+      ],
+      "fields": [
+        "Cấp học\t\t\t",
+        "Dự kiến sáp nhập",
+        "Ghi chú\t\t\t",
+        "Loại hình\t\t",
+        "Mã số",
+        "Quận/Huyện",
+        "Số nhóm lớp\t",
+        "Số trẻ\t\t",
+        "Số điểm lẻ\t",
+        "Số điện thoại trường    ",
+        "Trường Mầm non, Mẫu giáo",
+        "Xã/Phường",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Đạt CQG (MĐ)\t",
+        "Địa chỉ trường"
+      ],
+      "geometryCounts": {
+        "Point": 123
+      },
+      "sourceFile": "data/geojson/317.geojson"
+    },
+    {
+      "id": 318,
+      "name": "QH Trường Tiểu học",
+      "geometry": "Point",
+      "categoryIds": [
+        "sogddt_quyhoach"
+      ],
+      "primaryCategoryId": "sogddt_quyhoach",
+      "featureCount": 131,
+      "available": true,
+      "file": "/data/layers/318.geojson",
+      "table": "sogddt_quyhoach.truong_tieu_hoc",
+      "sourceFeatureCount": 131,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.70593,
+        9.916357,
+        106.23121,
+        10.30929
+      ],
+      "fields": [
+        "Cấp học\t\t\t",
+        "Dự kiến sáp nhập\t",
+        "Ghi chú\t\t\t",
+        "Loại hình\t\t",
+        "Mã số",
+        "Quận/Huyện",
+        "Số học sinh\t",
+        "Số lớp",
+        "Số điểm lẻ\t",
+        "Số điện thoại trường    ",
+        "Trường Tiểu học\t\t",
+        "Xã/Phường",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Đạt CQG (MĐ)\t",
+        "Địa chỉ trường\t\t"
+      ],
+      "geometryCounts": {
+        "Point": 131
+      },
+      "sourceFile": "data/geojson/318.geojson"
+    },
+    {
+      "id": 319,
+      "name": "QH Trường THCS",
+      "geometry": "Point",
+      "categoryIds": [
+        "sogddt_quyhoach"
+      ],
+      "primaryCategoryId": "sogddt_quyhoach",
+      "featureCount": 80,
+      "available": true,
+      "file": "/data/layers/319.geojson",
+      "table": "sogddt_quyhoach.truong_thcs",
+      "sourceFeatureCount": 80,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.70686,
+        9.91531,
+        106.2063509,
+        10.31024
+      ],
+      "fields": [
+        "Cấp học\t\t\t",
+        "Dự kiến sáp nhập",
+        "Ghi chú\t\t\t",
+        "Loại hình\t\t",
+        "Mã số",
+        "Quận/Huyện",
+        "Số học sinh\t",
+        "Số lớp\t",
+        "Số điện thoại trường ",
+        "Trường THCS\t\t",
+        "Xã/Phường",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Đạt CQG (MĐ)\t",
+        "Địa chỉ trường\t\t"
+      ],
+      "geometryCounts": {
+        "Point": 80
+      },
+      "sourceFile": "data/geojson/319.geojson"
+    },
+    {
+      "id": 320,
+      "name": "QH Trường THCS & THPT",
+      "geometry": "Point",
+      "categoryIds": [
+        "sogddt_quyhoach"
+      ],
+      "primaryCategoryId": "sogddt_quyhoach",
+      "featureCount": 10,
+      "available": true,
+      "file": "/data/layers/320.geojson",
+      "table": "sogddt_quyhoach.truong_thcs___thpt",
+      "sourceFeatureCount": 10,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.8309079,
+        10.0119007,
+        106.25167,
+        10.2588472
+      ],
+      "fields": [
+        "Cấp học\t\t\t",
+        "Dự kiến sáp nhập\t",
+        "Ghi chú\t\t\t",
+        "Loại hình\t\t",
+        "Mã số",
+        "Quận/Huyện",
+        "Số học sinh\t\t",
+        "Số lớp\t\t\t",
+        "Số điện thoại trường    ",
+        "Trường THCS-THPT\t",
+        "Xã/Phường",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Đạt CQG (MĐ)\t",
+        "Địa chỉ trường\t\t"
+      ],
+      "geometryCounts": {
+        "Point": 10
+      },
+      "sourceFile": "data/geojson/320.geojson"
+    },
+    {
+      "id": 321,
+      "name": "QH Trường THPT",
+      "geometry": "Point",
+      "categoryIds": [
+        "sogddt_quyhoach"
+      ],
+      "primaryCategoryId": "sogddt_quyhoach",
+      "featureCount": 25,
+      "available": true,
+      "file": "/data/layers/321.geojson",
+      "table": "sogddt_quyhoach.truong_thpt",
+      "sourceFeatureCount": 25,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.71949,
+        9.9524403,
+        106.19191,
+        10.2810465
+      ],
+      "fields": [
+        "Cấp học\t\t\t",
+        "Dự kiến sáp nhập",
+        "Ghi chú\t\t\t",
+        "Loại hình\t\t",
+        "Mã số",
+        "Quận/Huyện",
+        "Số học sinh\t\t",
+        "Số lớp\t\t\t",
+        "Số điện thoại trường    ",
+        "Trường THPT\t\t",
+        "Xã/Phường",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Đạt CQG (MĐ)\t\t",
+        "Địa chỉ trường\t\t"
+      ],
+      "geometryCounts": {
+        "Point": 25
+      },
+      "sourceFile": "data/geojson/321.geojson"
+    },
+    {
+      "id": 322,
+      "name": "QH Trung tâm GDNN - GDTX",
+      "geometry": "Point",
+      "categoryIds": [
+        "sogddt_quyhoach"
+      ],
+      "primaryCategoryId": "sogddt_quyhoach",
+      "featureCount": 8,
+      "available": true,
+      "file": "/data/layers/322.geojson",
+      "table": "sogddt_quyhoach.trung_tam_gdnn___gdtx",
+      "sourceFeatureCount": 8,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.76032,
+        9.96579,
+        106.18753,
+        10.24805
+      ],
+      "fields": [
+        "Cấp học\t\t\t",
+        "Dự kiến sáp nhập",
+        "Ghi chú\t\t\t",
+        "Loại hình\t\t",
+        "Mã số",
+        "Quận/Huyện",
+        "Số học sinh\t\t",
+        "Số lớp\t\t\t",
+        "Số điện thoại trường   ",
+        "Trung tâm GDNN-GDTX\t",
+        "Xã/Phường",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Đạt CQG (MĐ)\t\t",
+        "Địa chỉ trường\t\t"
+      ],
+      "geometryCounts": {
+        "Point": 8
+      },
+      "sourceFile": "data/geojson/322.geojson"
+    },
+    {
+      "id": 327,
+      "name": "Nhà thuốc",
+      "geometry": "Point",
+      "categoryIds": [
+        "so_y_te"
+      ],
+      "primaryCategoryId": "so_y_te",
+      "featureCount": 129,
+      "available": true,
+      "file": "/data/layers/327.geojson",
+      "table": "so_y_te.nha_thuoc",
+      "sourceFeatureCount": 129,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.7577101,
+        9.950899,
+        106.1869464,
+        10.2647474
+      ],
+      "fields": [
+        "Phân loại",
+        "Số ký hiệu",
+        "Số điện thoại",
+        "Trạng thái đạt chuẩn GPP",
+        "Tên đơn vị",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 129
+      },
+      "sourceFile": "data/geojson/327.geojson"
+    },
+    {
+      "id": 335,
+      "name": "Tổ chức đấu giá tài sản",
+      "geometry": "Point",
+      "categoryIds": [
+        "sotuphap"
+      ],
+      "primaryCategoryId": "sotuphap",
+      "featureCount": 6,
+      "available": true,
+      "file": "/data/layers/335.geojson",
+      "table": "sotuphap.to_chuc_dau_gia_tai_san",
+      "sourceFeatureCount": 6,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.9713885,
+        9.9261545,
+        106.3755472,
+        10.2570139
+      ],
+      "fields": [
+        "Giám đốc/ Chủ doanh nghiệp",
+        "Giấy đăng ký hoạt động",
+        "Ngày cấp giấy đăng ký",
+        "Số điện thoại",
+        "Tên tổ chức",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ tổ chức"
+      ],
+      "geometryCounts": {
+        "Point": 6
+      },
+      "sourceFile": "data/geojson/335.geojson"
+    },
+    {
+      "id": 336,
+      "name": "Tổ chức hành nghề công chứng",
+      "geometry": "Point",
+      "categoryIds": [
+        "sotuphap"
+      ],
+      "primaryCategoryId": "sotuphap",
+      "featureCount": 27,
+      "available": true,
+      "file": "/data/layers/336.geojson",
+      "table": "sotuphap.to_chuc_hanh_nghe_cong_chung",
+      "sourceFeatureCount": 32,
+      "invalidGeometryCount": 5,
+      "bounds": [
+        105.8069146,
+        9.6339591,
+        106.5865682,
+        10.3009817
+      ],
+      "fields": [
+        "Chức vụ người đại diện công chứng viên",
+        "Người đại diện công chứng viên",
+        "Số điện thoại",
+        "Tên tổ chức công chứng",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 27
+      },
+      "sourceFile": "data/geojson/336.geojson"
+    },
+    {
+      "id": 337,
+      "name": "Chùa",
+      "geometry": "Point",
+      "categoryIds": [
+        "sovhttdl"
+      ],
+      "primaryCategoryId": "sovhttdl",
+      "featureCount": 68,
+      "available": true,
+      "file": "/data/layers/337.geojson",
+      "table": "sovhttdl.ten_chua",
+      "sourceFeatureCount": 68,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        106.0106873,
+        9.5951162,
+        106.7065966,
+        10.3083597
+      ],
+      "fields": [
+        "Chùa",
+        "Thời gian xây dựng",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Đặc điểm",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 68
+      },
+      "sourceFile": "data/geojson/337.geojson"
+    },
+    {
+      "id": 339,
+      "name": "Thông tin xã phường",
+      "geometry": "Point",
+      "categoryIds": [
+        "hanh-chinh"
+      ],
+      "primaryCategoryId": "hanh-chinh",
+      "featureCount": 124,
+      "available": true,
+      "file": "/data/layers/339.geojson",
+      "table": "demogis.thong_tin_xa_phuong",
+      "sourceFeatureCount": 124,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.7150454,
+        9.5533364,
+        106.7225535,
+        10.3048254
+      ],
+      "fields": [
+        "Bí thư",
+        "Chủ tịch",
+        "Diện tích (Km2)",
+        "Dân số (Người)",
+        "Sáp nhập",
+        "Trụ sở",
+        "Tên xã phường",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Điện thoại BT",
+        "Điện thoại CT"
+      ],
+      "geometryCounts": {
+        "Point": 124
+      },
+      "sourceFile": "data/geojson/339.geojson"
+    },
+    {
+      "id": 340,
+      "name": "Cơ sở khám chữa bệnh",
+      "geometry": "Point",
+      "categoryIds": [
+        "so_y_te"
+      ],
+      "primaryCategoryId": "so_y_te",
+      "featureCount": 146,
+      "available": true,
+      "file": "/data/layers/340.geojson",
+      "table": "so_y_te.co_so_kham_chua_benh",
+      "sourceFeatureCount": 147,
+      "invalidGeometryCount": 1,
+      "bounds": [
+        105.7969,
+        9.55324,
+        106.7303337,
+        10.326085
+      ],
+      "fields": [
+        "Giường HSCC",
+        "Giường HSTC",
+        "Giường PD ",
+        "Giường TK",
+        "Hình thức tổ chức",
+        "Loại hình",
+        "Mã đơn vị khám chữa bệnh",
+        "Số điện thoại",
+        "Tên đơn vị",
+        "Xếp cấp chuyên môn kỹ thuật",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 146
+      },
+      "sourceFile": "data/geojson/340.geojson"
+    },
+    {
+      "id": 341,
+      "name": "Trung tâm văn hóa",
+      "geometry": "Point",
+      "categoryIds": [
+        "sovhttdl"
+      ],
+      "primaryCategoryId": "sovhttdl",
+      "featureCount": 92,
+      "available": true,
+      "file": "/data/layers/341.geojson",
+      "table": "sovhttdl.trung_tam_van_hoa",
+      "sourceFeatureCount": 92,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.9269814,
+        9.7397188,
+        106.5808532,
+        10.3201911
+      ],
+      "fields": [
+        "Năm xây dựng",
+        "Số điện thoại",
+        "Tên trung tâm văn hóa",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 92
+      },
+      "sourceFile": "data/geojson/341.geojson"
+    },
+    {
+      "id": 342,
+      "name": "Trung tâm hành chính công",
+      "geometry": "Point",
+      "categoryIds": [
+        "sonoivu"
+      ],
+      "primaryCategoryId": "sonoivu",
+      "featureCount": 124,
+      "available": true,
+      "file": "/data/layers/342.geojson",
+      "table": "sonoivu.trung_tam_hanh_chinh_cong",
+      "sourceFeatureCount": 124,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.7150454,
+        9.5533364,
+        106.7225535,
+        10.3048254
+      ],
+      "fields": [
+        "Chỉ số Cải cách hành chính (PAR Index)",
+        "Chỉ số hài lòng của người dân, tổ chức (SIPAS)",
+        "Số điện thoại",
+        "Tên Trung tâm hành chính công",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 124
+      },
+      "sourceFile": "data/geojson/342.geojson"
+    },
+    {
+      "id": 344,
+      "name": "Khu di tích",
+      "geometry": "Point",
+      "categoryIds": [
+        "sovhttdl"
+      ],
+      "primaryCategoryId": "sovhttdl",
+      "featureCount": 109,
+      "available": true,
+      "file": "/data/layers/344.geojson",
+      "table": "sovhttdl.khu_di_tich",
+      "sourceFeatureCount": 135,
+      "invalidGeometryCount": 26,
+      "bounds": [
+        105.7542565,
+        9.7040026,
+        106.7250497,
+        10.3307849
+      ],
+      "fields": [
+        "Khu di tích",
+        "Năm xây dựng",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Đặc điểm",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 109
+      },
+      "sourceFile": "data/geojson/344.geojson"
+    },
+    {
+      "id": 347,
+      "name": "Cửa hàng xăng dầu",
+      "geometry": "Point",
+      "categoryIds": [
+        "socongthuong"
+      ],
+      "primaryCategoryId": "socongthuong",
+      "featureCount": 1001,
+      "available": true,
+      "file": "/data/layers/347.geojson",
+      "table": "socongthuong.cua_hang_xang_dau",
+      "sourceFeatureCount": 1001,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.701763,
+        9.5389535,
+        106.7443797,
+        10.3302454
+      ],
+      "fields": [
+        "Cửa hàng xăng dầu",
+        "Số điện thoại",
+        "Tên doanh nghiệp",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 1001
+      },
+      "sourceFile": "data/geojson/347.geojson"
+    },
+    {
+      "id": 348,
+      "name": "Cơ sở kinh doanh mua bán khí",
+      "geometry": "Point",
+      "categoryIds": [
+        "socongthuong"
+      ],
+      "primaryCategoryId": "socongthuong",
+      "featureCount": 32,
+      "available": true,
+      "file": "/data/layers/348.geojson",
+      "table": "socongthuong.co_so_kinh_doanh_mua_ban_khi",
+      "sourceFeatureCount": 32,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.821817,
+        9.9222263,
+        106.5812656,
+        10.3247175
+      ],
+      "fields": [
+        "Cửa hàng",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Điện thoại",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 32
+      },
+      "sourceFile": "data/geojson/348.geojson"
+    },
+    {
+      "id": 349,
+      "name": "Sản phẩm nông thôn tiêu biểu",
+      "geometry": "Point",
+      "categoryIds": [
+        "socongthuong"
+      ],
+      "primaryCategoryId": "socongthuong",
+      "featureCount": 84,
+      "available": true,
+      "file": "/data/layers/349.geojson",
+      "table": "socongthuong.san_pham_nong_thon_tieu_bieu",
+      "sourceFeatureCount": 85,
+      "invalidGeometryCount": 1,
+      "bounds": [
+        105.8387909,
+        9.5516718,
+        106.5867765,
+        10.3078006
+      ],
+      "fields": [
+        "Công ty",
+        "Cấp khu vực",
+        "Cấp quốc gia",
+        "Năng lực sản xuất",
+        "Sản phẩm",
+        "Số điện thoại",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 84
+      },
+      "sourceFile": "data/geojson/349.geojson"
+    },
+    {
+      "id": 350,
+      "name": "Bến phà",
+      "geometry": "Point",
+      "categoryIds": [
+        "sgtvt"
+      ],
+      "primaryCategoryId": "sgtvt",
+      "featureCount": 6,
+      "available": true,
+      "file": "/data/layers/350.geojson",
+      "table": "sgtvt.ben_pha",
+      "sourceFeatureCount": 6,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.9189191,
+        9.9648562,
+        106.2105525,
+        10.2600711
+      ],
+      "fields": [
+        "Bến phà",
+        "Diện tích bến phà",
+        "Năm xây dựng",
+        "Năng lực (tấn)",
+        "Tỉnh",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa điểm"
+      ],
+      "geometryCounts": {
+        "Point": 6
+      },
+      "sourceFile": "data/geojson/350.geojson"
+    },
+    {
+      "id": 352,
+      "name": "Cơ sở kinh doanh VLXD",
+      "geometry": "Point",
+      "categoryIds": [
+        "sgtvt"
+      ],
+      "primaryCategoryId": "sgtvt",
+      "featureCount": 62,
+      "available": true,
+      "file": "/data/layers/352.geojson",
+      "table": "sgtvt.co_so_kinh_doanh_vlxd",
+      "sourceFeatureCount": 62,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.7910948,
+        9.607066,
+        106.7364537,
+        10.3269073
+      ],
+      "fields": [
+        "Cơ sở sản xuất kinh doanh VLXD",
+        "Khu vực",
+        "Số điện thoại",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 62
+      },
+      "sourceFile": "data/geojson/352.geojson"
+    },
+    {
+      "id": 353,
+      "name": "Cơ sở sản xuất kinh doanh ATTP",
+      "geometry": "Point",
+      "categoryIds": [
+        "socongthuong"
+      ],
+      "primaryCategoryId": "socongthuong",
+      "featureCount": 240,
+      "available": true,
+      "file": "/data/layers/353.geojson",
+      "table": "socongthuong.co_so_san_xuat_kinh_doanh_attp",
+      "sourceFeatureCount": 240,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.9611748,
+        9.6333786,
+        106.6930768,
+        10.3332857
+      ],
+      "fields": [
+        "Cơ sở sản xuất kinh doanh ATTP",
+        "Ngành nghề",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Điện thoại",
+        "Địa điểm"
+      ],
+      "geometryCounts": {
+        "Point": 240
+      },
+      "sourceFile": "data/geojson/353.geojson"
+    },
+    {
+      "id": 355,
+      "name": "Chợ",
+      "geometry": "Point",
+      "categoryIds": [
+        "socongthuong"
+      ],
+      "primaryCategoryId": "socongthuong",
+      "featureCount": 335,
+      "available": true,
+      "file": "/data/layers/355.geojson",
+      "table": "socongthuong.cho",
+      "sourceFeatureCount": 335,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.7292491,
+        9.550318,
+        106.7642081,
+        10.3317257
+      ],
+      "fields": [
+        "Chợ",
+        "Diện tích (m2)",
+        "Doanh nghiệp/ HTX",
+        "Hiện trạng",
+        "Nguồn vốn chợ",
+        "Phương thức kinh doanh",
+        "Quy mô chợ",
+        "Số điểm kinh doanh",
+        "Tổ chức quản lý chợ",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ "
+      ],
+      "geometryCounts": {
+        "Point": 335
+      },
+      "sourceFile": "data/geojson/355.geojson"
+    },
+    {
+      "id": 356,
+      "name": "Bến xe",
+      "geometry": "Point",
+      "categoryIds": [
+        "sgtvt"
+      ],
+      "primaryCategoryId": "sgtvt",
+      "featureCount": 13,
+      "available": true,
+      "file": "/data/layers/356.geojson",
+      "table": "sgtvt.ben_xe",
+      "sourceFeatureCount": 13,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.9575201,
+        9.6877446,
+        106.5150189,
+        10.2669891
+      ],
+      "fields": [
+        "Bến xe",
+        "Diện tích bến xe",
+        "Kết cấu mặt bến xe",
+        "Năm xây dựng",
+        "Số điện thoại",
+        "Vị trí",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id"
+      ],
+      "geometryCounts": {
+        "Point": 13
+      },
+      "sourceFile": "data/geojson/356.geojson"
+    },
+    {
+      "id": 358,
+      "name": "Phật giáo Nam tông",
+      "geometry": "Point",
+      "categoryIds": [
+        "sodttg"
+      ],
+      "primaryCategoryId": "sodttg",
+      "featureCount": 156,
+      "available": true,
+      "file": "/data/layers/358.geojson",
+      "table": "sodttg.phat_giao_nam_tong",
+      "sourceFeatureCount": 156,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.8187187,
+        9.5951657,
+        106.4739134,
+        10.0762245
+      ],
+      "fields": [
+        "Phật giáo Nam tông",
+        "Tôn Kính",
+        "Tông phái",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 156
+      },
+      "sourceFile": "data/geojson/358.geojson"
+    },
+    {
+      "id": 359,
+      "name": "Phật giáo Bắc tông",
+      "geometry": "Point",
+      "categoryIds": [
+        "sodttg"
+      ],
+      "primaryCategoryId": "sodttg",
+      "featureCount": 582,
+      "available": true,
+      "file": "/data/layers/359.geojson",
+      "table": "sodttg.phat_giao_bac_tong",
+      "sourceFeatureCount": 582,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.7015577,
+        9.57468,
+        106.7619991,
+        10.3333617
+      ],
+      "fields": [
+        "Phật giáo Bắc tông",
+        "Tôn Kính",
+        "Tông phái",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 582
+      },
+      "sourceFile": "data/geojson/359.geojson"
+    },
+    {
+      "id": 360,
+      "name": "Công giáo",
+      "geometry": "Point",
+      "categoryIds": [
+        "sodttg"
+      ],
+      "primaryCategoryId": "sodttg",
+      "featureCount": 200,
+      "available": true,
+      "file": "/data/layers/360.geojson",
+      "table": "sodttg.cong_giao",
+      "sourceFeatureCount": 200,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.7400427,
+        9.5508154,
+        106.7001737,
+        10.3154761
+      ],
+      "fields": [
+        "Cơ sở Công giáo",
+        "Người đứng đầu cơ sở Công giáo",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 200
+      },
+      "sourceFile": "data/geojson/360.geojson"
+    },
+    {
+      "id": 361,
+      "name": "Xã phường An toàn khu",
+      "geometry": "Point",
+      "categoryIds": [
+        "sonoivu"
+      ],
+      "primaryCategoryId": "sonoivu",
+      "featureCount": 74,
+      "available": true,
+      "file": "/data/layers/361.geojson",
+      "table": "sonoivu.xa_phuong_an_toan_khu",
+      "sourceFeatureCount": 74,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.8267823,
+        9.5533364,
+        106.7225535,
+        10.3048254
+      ],
+      "fields": [
+        "An toàn khu",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Điện thoại",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 74
+      },
+      "sourceFile": "data/geojson/361.geojson"
+    },
+    {
+      "id": 362,
+      "name": "Cao đài bản chỉnh",
+      "geometry": "Point",
+      "categoryIds": [
+        "sodttg"
+      ],
+      "primaryCategoryId": "sodttg",
+      "featureCount": 100,
+      "available": true,
+      "file": "/data/layers/362.geojson",
+      "table": "sodttg.cao_dai",
+      "sourceFeatureCount": 100,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.9244555,
+        9.6354111,
+        106.6993211,
+        10.3104413
+      ],
+      "fields": [
+        "Người đại diện",
+        "Thánh thất",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 100
+      },
+      "sourceFile": "data/geojson/362.geojson"
+    },
+    {
+      "id": 363,
+      "name": "Tin lành",
+      "geometry": "Point",
+      "categoryIds": [
+        "sodttg"
+      ],
+      "primaryCategoryId": "sodttg",
+      "featureCount": 36,
+      "available": true,
+      "file": "/data/layers/363.geojson",
+      "table": "sodttg.tin_lanh",
+      "sourceFeatureCount": 36,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.7787162,
+        9.6546186,
+        106.686215,
+        10.3078986
+      ],
+      "fields": [
+        "Người đại diện đơn vị",
+        "Nhà thờ",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 36
+      },
+      "sourceFile": "data/geojson/363.geojson"
+    },
+    {
+      "id": 364,
+      "name": "Giáo hội tịnh độ",
+      "geometry": "Point",
+      "categoryIds": [
+        "sodttg"
+      ],
+      "primaryCategoryId": "sodttg",
+      "featureCount": 39,
+      "available": true,
+      "file": "/data/layers/364.geojson",
+      "table": "sodttg.giao_hoi_tinh_do",
+      "sourceFeatureCount": 39,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.7235184,
+        9.603013,
+        106.6228706,
+        10.2789058
+      ],
+      "fields": [
+        "Giáo hội tịnh độ",
+        "Người đứng đầu",
+        "Tên khác",
+        "Tôn giáo",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Điện thoại",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 39
+      },
+      "sourceFile": "data/geojson/364.geojson"
+    },
+    {
+      "id": 366,
+      "name": "Cao đài tiên thiên",
+      "geometry": "Point",
+      "categoryIds": [
+        "sodttg"
+      ],
+      "primaryCategoryId": "sodttg",
+      "featureCount": 53,
+      "available": true,
+      "file": "/data/layers/366.geojson",
+      "table": "sodttg.cao_dai_tien_thien",
+      "sourceFeatureCount": 53,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.9111256,
+        9.734505,
+        106.655084,
+        10.3215677
+      ],
+      "fields": [
+        "Cao đài tiên thiên",
+        "Người đại diện",
+        "Tôn giáo",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Điện thoại",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 53
+      },
+      "sourceFile": "data/geojson/366.geojson"
+    },
+    {
+      "id": 368,
+      "name": "Bưu cục",
+      "geometry": "Point",
+      "categoryIds": [
+        "bcvt"
+      ],
+      "primaryCategoryId": "bcvt",
+      "featureCount": 316,
+      "available": true,
+      "file": "/data/layers/368.geojson",
+      "table": "bcvt.doanh_nghiep_buu_chinh_chuyen_phat",
+      "sourceFeatureCount": 316,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.7306328,
+        9.5520454,
+        106.764,
+        10.329912
+      ],
+      "fields": [
+        "Doanh nghiệp bưu chính chuyển phát",
+        "Ngày bắt đầu hoạt động",
+        "Số giấy phép bưu chính",
+        "Số giấy phép ĐKKD",
+        "Tình trạng hoạt động",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Điểm phục vụ bưu chính",
+        "Điện thoại",
+        "Địa chỉ"
+      ],
+      "geometryCounts": {
+        "Point": 316
+      },
+      "sourceFile": "data/geojson/368.geojson"
+    },
+    {
+      "id": 369,
+      "name": "DN Chuyển đổi số",
+      "geometry": "Point",
+      "categoryIds": [
+        "sokhdt"
+      ],
+      "primaryCategoryId": "sokhdt",
+      "featureCount": 100,
+      "available": true,
+      "file": "/data/layers/369.geojson",
+      "table": "sokhdt.dn_chuyen_doi_so",
+      "sourceFeatureCount": 100,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.7611711,
+        9.6368251,
+        106.6981208,
+        10.3066735
+      ],
+      "fields": [
+        "Ghi chú",
+        "Loại hình doanh nghiệp",
+        "Mã số DN Chuyển đổi số",
+        "Ngành nghề kinh doanh chính",
+        "Tên DN Chuyển đổi số",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Điện thoại",
+        "Địa chỉ trụ sở chính"
+      ],
+      "geometryCounts": {
+        "Point": 100
+      },
+      "sourceFile": "data/geojson/369.geojson"
+    },
+    {
+      "id": 370,
+      "name": "Tuyến đường thư Cấp 2",
+      "geometry": "Point",
+      "categoryIds": [
+        "bcvt"
+      ],
+      "primaryCategoryId": "bcvt",
+      "featureCount": 32,
+      "available": true,
+      "file": "/data/layers/370.geojson",
+      "table": "bcvt.tuyen_duong_thu_2",
+      "sourceFeatureCount": 32,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.9722435,
+        9.9366966,
+        106.3766617,
+        10.2560404
+      ],
+      "fields": [
+        "Doanh nghiệp ",
+        "Tên tuyến",
+        "Tần suất",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Điểm bắt đầu",
+        "Điểm kết thúc"
+      ],
+      "geometryCounts": {
+        "Point": 32
+      },
+      "sourceFile": "data/geojson/370.geojson"
+    },
+    {
+      "id": 371,
+      "name": "Tuyến đường thư Cấp 1",
+      "geometry": "Point",
+      "categoryIds": [
+        "bcvt"
+      ],
+      "primaryCategoryId": "bcvt",
+      "featureCount": 8,
+      "available": true,
+      "file": "/data/layers/371.geojson",
+      "table": "bcvt.tuyen_duong_thu_1",
+      "sourceFeatureCount": 8,
+      "invalidGeometryCount": 0,
+      "bounds": [
+        105.8248287,
+        9.937546,
+        106.3761433,
+        10.2549473
+      ],
+      "fields": [
+        "Doanh nghiệp",
+        "Tên tuyến",
+        "Tần suất",
+        "_category_id",
+        "_category_label",
+        "_color",
+        "_fid",
+        "_geometry",
+        "_label",
+        "_layer_id",
+        "_layer_name",
+        "fid",
+        "label",
+        "layer_id",
+        "Điểm bắt đầu",
+        "Điểm kết thúc"
+      ],
+      "geometryCounts": {
+        "Point": 8
+      },
+      "sourceFile": "data/geojson/371.geojson"
+    }
+  ]
+}

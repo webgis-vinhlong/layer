@@ -1,0 +1,944 @@
+{
+  "schemaVersion": 1,
+  "sourceArchiveStatus": "central-directory-missing; entries recovered by CRC",
+  "files": [
+    {
+      "id": 5,
+      "file": "data/geojson/5.geojson",
+      "sha256": "fe0eefab4f2365f2014fae9db1c825a26992eb2cdaa6ca7d52836bf4f9952249",
+      "bytes": 23817,
+      "features": 49,
+      "mappedFeatures": 49,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 6,
+      "file": "data/geojson/6.geojson",
+      "sha256": "4a19d3e2fbe784a2e0321ce4a4b19a1e9298fd5eb2668d728052d7067507a4af",
+      "bytes": 29543,
+      "features": 75,
+      "mappedFeatures": 75,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 7,
+      "file": "data/geojson/7.geojson",
+      "sha256": "1439d497ebf9aa7b88486e45b83130650bf306a8a4e924242fc3423b2d55faf6",
+      "bytes": 7588,
+      "features": 15,
+      "mappedFeatures": 15,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 8,
+      "file": "data/geojson/8.geojson",
+      "sha256": "81fe0f7042fb70153ba4976b84c57b7164514f4bb6223a27e805741cb6812560",
+      "bytes": 6649,
+      "features": 5,
+      "mappedFeatures": 5,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 13,
+      "file": "data/geojson/13.geojson",
+      "sha256": "3705d1991fde65396ab43a26c5fe2ac32da435e969b1e8d563d951b316f9c19c",
+      "bytes": 2314168,
+      "features": 4906,
+      "mappedFeatures": 4905,
+      "invalidGeometryCount": 1
+    },
+    {
+      "id": 28,
+      "file": "data/geojson/28.geojson",
+      "sha256": "c1ff8f2d4cdc157ba057859680f13c71aea86cc82d4bf849559e05676c15ac90",
+      "bytes": 16876,
+      "features": 38,
+      "mappedFeatures": 38,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 31,
+      "file": "data/geojson/31.geojson",
+      "sha256": "4d5c2a9e5c531e2ea9cac8b8f327cba8566b6adfee2613669ba0becb5fd7b3c4",
+      "bytes": 18457,
+      "features": 31,
+      "mappedFeatures": 31,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 85,
+      "file": "data/geojson/85.geojson",
+      "sha256": "8b4c807d6f98e0853d9541d07713ccc6d8bb8147c109017b31f132247011c4f2",
+      "bytes": 88612,
+      "features": 274,
+      "mappedFeatures": 274,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 86,
+      "file": "data/geojson/86.geojson",
+      "sha256": "b30b840463b5cc3141584595c6720ac6a064f128cc0bb7ac6b02fa4a6c2b510e",
+      "bytes": 70205,
+      "features": 219,
+      "mappedFeatures": 219,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 154,
+      "file": "data/geojson/154.geojson",
+      "sha256": "022dad25c81e5241aef3a0d7755d7b6e0f0ecec252f482aebbf4fa3bf76c2049",
+      "bytes": 158401,
+      "features": 203,
+      "mappedFeatures": 203,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 156,
+      "file": "data/geojson/156.geojson",
+      "sha256": "d30a99ee22fc41e20765a3743accb0fe2be0c30e527e87eb9458b540e098fdf5",
+      "bytes": 5608,
+      "features": 14,
+      "mappedFeatures": 14,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 158,
+      "file": "data/geojson/158.geojson",
+      "sha256": "691a49efd405f3b32af90aa92f4886fb851d6d521aa9a976faabafe43b94f541",
+      "bytes": 254872,
+      "features": 330,
+      "mappedFeatures": 211,
+      "invalidGeometryCount": 119
+    },
+    {
+      "id": 165,
+      "file": "data/geojson/165.geojson",
+      "sha256": "eb4ee9ca85b2e07b2853c5d83fce1aae5bdcd72f21ac636f1a0561c4bde8d07f",
+      "bytes": 1105883,
+      "features": 2525,
+      "mappedFeatures": 2524,
+      "invalidGeometryCount": 1
+    },
+    {
+      "id": 166,
+      "file": "data/geojson/166.geojson",
+      "sha256": "cb63c1ce251339546b8b7b58e3985a75febf1c777f4af06a4778f0610f568437",
+      "bytes": 1986298,
+      "features": 4906,
+      "mappedFeatures": 4905,
+      "invalidGeometryCount": 1
+    },
+    {
+      "id": 167,
+      "file": "data/geojson/167.geojson",
+      "sha256": "8b5f6718a644a1bd39420f5053539f7cb4ec7b392293f25c6e8375ffd0547deb",
+      "bytes": 311191,
+      "features": 520,
+      "mappedFeatures": 479,
+      "invalidGeometryCount": 41
+    },
+    {
+      "id": 179,
+      "file": "data/geojson/179.geojson",
+      "sha256": "468f869c6feb162f765f3c322f85591aa584203fd02f6adda6baadad6c172981",
+      "bytes": 273327,
+      "features": 915,
+      "mappedFeatures": 915,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 219,
+      "file": "data/geojson/219.geojson",
+      "sha256": "5d5058ad74db6f1aa26a9f927e7cd0a978e2595f8e7580384fc7ff69abfe6e76",
+      "bytes": 93291,
+      "features": 295,
+      "mappedFeatures": 294,
+      "invalidGeometryCount": 1
+    },
+    {
+      "id": 243,
+      "file": "data/geojson/243.geojson",
+      "sha256": "cc53f9c10a06229f08429d09e611e7523fb0d4479681f71aae20dfb1da8be57f",
+      "bytes": 52080,
+      "features": 95,
+      "mappedFeatures": 93,
+      "invalidGeometryCount": 2
+    },
+    {
+      "id": 244,
+      "file": "data/geojson/244.geojson",
+      "sha256": "4476be96e5781ad6a693fdf5b5add4b1b72be9358a19db2f1bef965a72a721cf",
+      "bytes": 2709815,
+      "features": 4328,
+      "mappedFeatures": 4328,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 245,
+      "file": "data/geojson/245.geojson",
+      "sha256": "de4f21f985d0d0883450e60aa2370fff68024ab0a209a0db25a1d161d8940475",
+      "bytes": 6008,
+      "features": 11,
+      "mappedFeatures": 11,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 247,
+      "file": "data/geojson/247.geojson",
+      "sha256": "983ad97ba77953e72ec4bd7833378fcfc1867a8f8a7105b37f525ea740f31526",
+      "bytes": 30366,
+      "features": 37,
+      "mappedFeatures": 37,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 248,
+      "file": "data/geojson/248.geojson",
+      "sha256": "125a99ace593880917cad033667af837be6e1561033a4acaf0853f773c46b8a2",
+      "bytes": 1887,
+      "features": 3,
+      "mappedFeatures": 3,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 249,
+      "file": "data/geojson/249.geojson",
+      "sha256": "d686639032eee7b461c1a2073a0bcf2e0bfa990d2698142e61c7b73f9265fd1a",
+      "bytes": 99300,
+      "features": 59,
+      "mappedFeatures": 59,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 250,
+      "file": "data/geojson/250.geojson",
+      "sha256": "b93428cac23ed540e16602ba83742945c3ebb8813a246e4ded27e18f00dadf2a",
+      "bytes": 7687,
+      "features": 10,
+      "mappedFeatures": 10,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 251,
+      "file": "data/geojson/251.geojson",
+      "sha256": "e24510b68bbfedb201e0b46863c0f8b2ca908e5b8b88b88c360a15ff03a11a3d",
+      "bytes": 231610,
+      "features": 121,
+      "mappedFeatures": 121,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 252,
+      "file": "data/geojson/252.geojson",
+      "sha256": "fa8ba39172f6b538ebb78f2bab601ee5071ead421ee7f3dd339baed0a7030870",
+      "bytes": 1706,
+      "features": 3,
+      "mappedFeatures": 3,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 253,
+      "file": "data/geojson/253.geojson",
+      "sha256": "710b4c743712e6914d7384d18e32c3ced5fafbcdebbc3e8399f855c837a33144",
+      "bytes": 42394,
+      "features": 93,
+      "mappedFeatures": 92,
+      "invalidGeometryCount": 1
+    },
+    {
+      "id": 254,
+      "file": "data/geojson/254.geojson",
+      "sha256": "e5d7809e81f088a56cb2ecd442be92f77c910dac8f66319fa8bd7368b309f566",
+      "bytes": 36248,
+      "features": 92,
+      "mappedFeatures": 92,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 256,
+      "file": "data/geojson/256.geojson",
+      "sha256": "e72fa3e18371e586f47066de5e8f7250bc92e07ccbc6d1f5a0cc35ffe5325d5c",
+      "bytes": 3127527,
+      "features": 5710,
+      "mappedFeatures": 5708,
+      "invalidGeometryCount": 2
+    },
+    {
+      "id": 257,
+      "file": "data/geojson/257.geojson",
+      "sha256": "2c9bdf38ef51a8e06485066724e9edb0a8e1de207e5454213a87280540ef6b63",
+      "bytes": 57722,
+      "features": 93,
+      "mappedFeatures": 92,
+      "invalidGeometryCount": 1
+    },
+    {
+      "id": 258,
+      "file": "data/geojson/258.geojson",
+      "sha256": "a40149c2efec60a279f481c3ea8981c64bd000f7c695d71cd86ced80e6c738cc",
+      "bytes": 28472,
+      "features": 52,
+      "mappedFeatures": 52,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 259,
+      "file": "data/geojson/259.geojson",
+      "sha256": "127bdb1e5ffa1a1fde015055cdff513b6e883350ca9d319b4569b55725fed46e",
+      "bytes": 34896,
+      "features": 93,
+      "mappedFeatures": 93,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 260,
+      "file": "data/geojson/260.geojson",
+      "sha256": "3f839c09a49ad48e82102043c7dea15864fd0752f60c1d27772636cb80241ae3",
+      "bytes": 8636,
+      "features": 24,
+      "mappedFeatures": 24,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 261,
+      "file": "data/geojson/261.geojson",
+      "sha256": "130b474711b85b4ca04f161c23dcb19b4fa586cf1c0071d1580bddf9ef2439bc",
+      "bytes": 28956,
+      "features": 53,
+      "mappedFeatures": 53,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 262,
+      "file": "data/geojson/262.geojson",
+      "sha256": "abaa3bdc88c53f12563ff35e3dcac15ba1b1c88da751b9c6f74a644f6811bd20",
+      "bytes": 282076,
+      "features": 793,
+      "mappedFeatures": 143,
+      "invalidGeometryCount": 650
+    },
+    {
+      "id": 263,
+      "file": "data/geojson/263.geojson",
+      "sha256": "f381eaa5a426efc61eecba125cf174bf04b804147ada8ecf99cc1517860ba781",
+      "bytes": 439643,
+      "features": 1286,
+      "mappedFeatures": 642,
+      "invalidGeometryCount": 644
+    },
+    {
+      "id": 267,
+      "file": "data/geojson/267.geojson",
+      "sha256": "90385f6f1c5bde897260e40a4402a5e287fa38959a878f099d19628991767067",
+      "bytes": 66744,
+      "features": 105,
+      "mappedFeatures": 105,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 268,
+      "file": "data/geojson/268.geojson",
+      "sha256": "4cbf8792133161728beac3f52620407848ce8d0d3413ce48fa1ee03ecbd4eaa3",
+      "bytes": 72181,
+      "features": 122,
+      "mappedFeatures": 122,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 273,
+      "file": "data/geojson/273.geojson",
+      "sha256": "fcaff7b3540bc9b8b0988f6bb4f4154a81540fc52726195724578bdf466139e0",
+      "bytes": 2299,
+      "features": 2,
+      "mappedFeatures": 2,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 274,
+      "file": "data/geojson/274.geojson",
+      "sha256": "d680fccb37276d0fa47d6bfb583609a63db46ca9eed658c9cf70072d7088109a",
+      "bytes": 142539,
+      "features": 222,
+      "mappedFeatures": 221,
+      "invalidGeometryCount": 1
+    },
+    {
+      "id": 275,
+      "file": "data/geojson/275.geojson",
+      "sha256": "45f4103f55a6037ea9e9b53c34960a35d7a0e28c4e017aedf786e0669d628b04",
+      "bytes": 6584,
+      "features": 9,
+      "mappedFeatures": 9,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 276,
+      "file": "data/geojson/276.geojson",
+      "sha256": "d49f40844d8877262c1d54df2387a5cba6770357e1f1f3504c4ad98bc0a0c530",
+      "bytes": 102392,
+      "features": 135,
+      "mappedFeatures": 135,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 277,
+      "file": "data/geojson/277.geojson",
+      "sha256": "aa8964775674e445e540608f806dac58ee8634145690553567a745c52cffe3b2",
+      "bytes": 94476,
+      "features": 105,
+      "mappedFeatures": 105,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 278,
+      "file": "data/geojson/278.geojson",
+      "sha256": "be459a7b6662e2efa8147bb1cedcd239389b3026331b33123229fa21a11871fa",
+      "bytes": 11824,
+      "features": 23,
+      "mappedFeatures": 23,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 279,
+      "file": "data/geojson/279.geojson",
+      "sha256": "2ce38e4155b377683d2748a64e55dc33f9302ad3db9ecbb0f94f8081c4c6d7ce",
+      "bytes": 8941,
+      "features": 10,
+      "mappedFeatures": 10,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 280,
+      "file": "data/geojson/280.geojson",
+      "sha256": "ad631be8a0f323be2439ee5b36bd0630f923dbd0f609ae649d1817af33bf060e",
+      "bytes": 86695,
+      "features": 143,
+      "mappedFeatures": 143,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 285,
+      "file": "data/geojson/285.geojson",
+      "sha256": "218c66afd56b473774586fa85484c9a763be4e07718126d2307d365c88cf5b48",
+      "bytes": 2951,
+      "features": 6,
+      "mappedFeatures": 6,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 286,
+      "file": "data/geojson/286.geojson",
+      "sha256": "2f10840f8230f94750722b2785fcf4f9b2ffd039fc9508852e60c90812a646ed",
+      "bytes": 7696,
+      "features": 18,
+      "mappedFeatures": 18,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 287,
+      "file": "data/geojson/287.geojson",
+      "sha256": "914893ca7d734f8c340b1cfeb981122ff7bc6175d0fae987ad1813b02f5987b9",
+      "bytes": 7164,
+      "features": 17,
+      "mappedFeatures": 17,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 288,
+      "file": "data/geojson/288.geojson",
+      "sha256": "f3b150d3bb62f335486bf4989ddbe55922e9258eac73703ec68875f33f59a638",
+      "bytes": 469290,
+      "features": 984,
+      "mappedFeatures": 984,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 289,
+      "file": "data/geojson/289.geojson",
+      "sha256": "580e5ec23df5abccd4aad3f4b44ccabc3ab082628c20ef8491a4b8c3cbc7892b",
+      "bytes": 18983,
+      "features": 46,
+      "mappedFeatures": 37,
+      "invalidGeometryCount": 9
+    },
+    {
+      "id": 290,
+      "file": "data/geojson/290.geojson",
+      "sha256": "6b29160cf0fab85ddc40fb186fe9c9cf9bf013a2b98a3536914154591f3975a2",
+      "bytes": 28581,
+      "features": 80,
+      "mappedFeatures": 28,
+      "invalidGeometryCount": 52
+    },
+    {
+      "id": 291,
+      "file": "data/geojson/291.geojson",
+      "sha256": "0b62c71206c5090ba52cb0f7cdf78c1326e7360f77acc092e6793aa0a2b96a54",
+      "bytes": 45446,
+      "features": 124,
+      "mappedFeatures": 87,
+      "invalidGeometryCount": 37
+    },
+    {
+      "id": 292,
+      "file": "data/geojson/292.geojson",
+      "sha256": "abfd57fe7204a192940d4d4ed55be3ae850f833c1d8f6ae67d3c87edd7db0826",
+      "bytes": 1144,
+      "features": 2,
+      "mappedFeatures": 2,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 293,
+      "file": "data/geojson/293.geojson",
+      "sha256": "2f7e375d5e377f49b08ebcd8e7ec21720b4cf1141156ab633ac25ae7b387b561",
+      "bytes": 1224,
+      "features": 2,
+      "mappedFeatures": 2,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 294,
+      "file": "data/geojson/294.geojson",
+      "sha256": "905c8ce4d63b275766a8970dbacc7faba03f7e4f5b48f577a349377113cccb4d",
+      "bytes": 823,
+      "features": 1,
+      "mappedFeatures": 1,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 298,
+      "file": "data/geojson/298.geojson",
+      "sha256": "d3d673434b11cb123f0366ae33f2eb6190f10b22f584c113e82d21c170740eec",
+      "bytes": 6222,
+      "features": 8,
+      "mappedFeatures": 8,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 299,
+      "file": "data/geojson/299.geojson",
+      "sha256": "c2ebf13939d3da63c9201c2ebf2bbc7991f4c62e641f15e031f4178d8f5aae81",
+      "bytes": 3205,
+      "features": 5,
+      "mappedFeatures": 5,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 303,
+      "file": "data/geojson/303.geojson",
+      "sha256": "1ae2968b5b580b8fcb7d9e896c8cb590ef5a4d63a9e6bd6f6557c667295166db",
+      "bytes": 3706,
+      "features": 9,
+      "mappedFeatures": 9,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 304,
+      "file": "data/geojson/304.geojson",
+      "sha256": "44923fc738788ffc1b260fbf19f4f32340bfca0e87df9a46d15ea5f88915a0f0",
+      "bytes": 1075,
+      "features": 2,
+      "mappedFeatures": 2,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 305,
+      "file": "data/geojson/305.geojson",
+      "sha256": "62b198257aee2ca0505830f9396d911eeae868a4e7053bee14be4b06d9f84449",
+      "bytes": 35502,
+      "features": 109,
+      "mappedFeatures": 109,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 307,
+      "file": "data/geojson/307.geojson",
+      "sha256": "e28171461c8ff46a2b97b15cc7cb265c557a550fb01db8f440379e407e819717",
+      "bytes": 9307,
+      "features": 23,
+      "mappedFeatures": 23,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 308,
+      "file": "data/geojson/308.geojson",
+      "sha256": "34bfaa221271ccde828b25d1c52416b91a5ebebede289de59c734601cce6f698",
+      "bytes": 27641,
+      "features": 42,
+      "mappedFeatures": 42,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 311,
+      "file": "data/geojson/311.geojson",
+      "sha256": "98119eeab5e4cc0fc90c6ff00b63fd94e6eaca33f88043530a25eecb48332035",
+      "bytes": 258348,
+      "features": 374,
+      "mappedFeatures": 374,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 312,
+      "file": "data/geojson/312.geojson",
+      "sha256": "0c14b19435f0b4743d4602ee572e52081c6e59fb757630d5895d9c3153743c32",
+      "bytes": 190558,
+      "features": 471,
+      "mappedFeatures": 451,
+      "invalidGeometryCount": 20
+    },
+    {
+      "id": 313,
+      "file": "data/geojson/313.geojson",
+      "sha256": "bbb7f7f4537602fe12ce24d3d5e47e01edd4edceccfc71b27b09d5e3c37d7258",
+      "bytes": 225519,
+      "features": 331,
+      "mappedFeatures": 323,
+      "invalidGeometryCount": 8
+    },
+    {
+      "id": 315,
+      "file": "data/geojson/315.geojson",
+      "sha256": "54290e16eb5e875c60b93e50878ab5e62fff5168952c0915b210a8ddeca2327b",
+      "bytes": 15144,
+      "features": 22,
+      "mappedFeatures": 22,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 316,
+      "file": "data/geojson/316.geojson",
+      "sha256": "5f3623755e6151bae523b1ec67a08fc593051dd60bb0227c7e08de0d57c3c0b1",
+      "bytes": 73857,
+      "features": 111,
+      "mappedFeatures": 109,
+      "invalidGeometryCount": 2
+    },
+    {
+      "id": 317,
+      "file": "data/geojson/317.geojson",
+      "sha256": "507541036c15d36374b09b69fedd77a4a6f4d98dda642c767dc7b3c618157465",
+      "bytes": 84420,
+      "features": 123,
+      "mappedFeatures": 123,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 318,
+      "file": "data/geojson/318.geojson",
+      "sha256": "b8d1d33b2296f17a1442b5988279f638c46d321709ce001c6155e330f480db1a",
+      "bytes": 92948,
+      "features": 131,
+      "mappedFeatures": 131,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 319,
+      "file": "data/geojson/319.geojson",
+      "sha256": "8760ef5f3d7d091b55fe6aca72d4aba962fc6b70b2645e3211e6749fd807e91c",
+      "bytes": 50914,
+      "features": 80,
+      "mappedFeatures": 80,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 320,
+      "file": "data/geojson/320.geojson",
+      "sha256": "847a42a05f6803dcfdb87800dd1b2d04d6d7aefc3bae7c27888e38475c274029",
+      "bytes": 7100,
+      "features": 10,
+      "mappedFeatures": 10,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 321,
+      "file": "data/geojson/321.geojson",
+      "sha256": "106b2ed8fd47fc0c103aacbc748b8a53771381314e55f1aa37a95f86451a77a1",
+      "bytes": 16737,
+      "features": 25,
+      "mappedFeatures": 25,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 322,
+      "file": "data/geojson/322.geojson",
+      "sha256": "61aef215ff0d265785c38c123a83c40d5f3fc6ee1633f6ab083169d75eb89358",
+      "bytes": 5796,
+      "features": 8,
+      "mappedFeatures": 8,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 327,
+      "file": "data/geojson/327.geojson",
+      "sha256": "94043b0275be632e1077c200bc9fd5dcbcd33ac1f0b8fad59ace7e9cafd01a5a",
+      "bytes": 49488,
+      "features": 129,
+      "mappedFeatures": 129,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 335,
+      "file": "data/geojson/335.geojson",
+      "sha256": "3d1044773855c70d25b49937681b6b071ac991bccb0908db8cdffe83247e3e4b",
+      "bytes": 3946,
+      "features": 6,
+      "mappedFeatures": 6,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 336,
+      "file": "data/geojson/336.geojson",
+      "sha256": "e154f5d478a862ed8c3c60556abb5327eff2a753c13d78edc460a7db5fb6c677",
+      "bytes": 16949,
+      "features": 32,
+      "mappedFeatures": 27,
+      "invalidGeometryCount": 5
+    },
+    {
+      "id": 337,
+      "file": "data/geojson/337.geojson",
+      "sha256": "a60147f436ab93572900975d267483c8e3d295060e816a11532402c5d37e310b",
+      "bytes": 21931,
+      "features": 68,
+      "mappedFeatures": 68,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 339,
+      "file": "data/geojson/339.geojson",
+      "sha256": "da2a3b75eacbecb0093d2dc01f891281980d61314387ca29e641fb539ff0c146",
+      "bytes": 61864,
+      "features": 124,
+      "mappedFeatures": 124,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 340,
+      "file": "data/geojson/340.geojson",
+      "sha256": "6071dee426baf4689d889f13ea9bb7282978959aa46862b813cf1b3ff60826f6",
+      "bytes": 84446,
+      "features": 147,
+      "mappedFeatures": 146,
+      "invalidGeometryCount": 1
+    },
+    {
+      "id": 341,
+      "file": "data/geojson/341.geojson",
+      "sha256": "306a07112e373c535d2881e766f81d9ab298049412fab6c3d23008a5fa991513",
+      "bytes": 32858,
+      "features": 92,
+      "mappedFeatures": 92,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 342,
+      "file": "data/geojson/342.geojson",
+      "sha256": "e360f1ff8d7d2966bacef080b0aa0a1767138b3d5808da4f213c41f2b15a15b1",
+      "bytes": 67965,
+      "features": 124,
+      "mappedFeatures": 124,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 344,
+      "file": "data/geojson/344.geojson",
+      "sha256": "1cb510a5cef0ae7a142d1d0e9063c513544caff3f02eb3b5a0d956cf813f37fc",
+      "bytes": 43836,
+      "features": 135,
+      "mappedFeatures": 109,
+      "invalidGeometryCount": 26
+    },
+    {
+      "id": 347,
+      "file": "data/geojson/347.geojson",
+      "sha256": "b4c22ac8aab0179fa9c4cab4db535aa988aa6484f28e66868eb520b11ae9d813",
+      "bytes": 432132,
+      "features": 1001,
+      "mappedFeatures": 1001,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 348,
+      "file": "data/geojson/348.geojson",
+      "sha256": "e2780ab4d88b8441dc6c293b25584b50785d7de904f03c7a556726531c5ce46e",
+      "bytes": 11656,
+      "features": 32,
+      "mappedFeatures": 32,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 349,
+      "file": "data/geojson/349.geojson",
+      "sha256": "7c9c334cfdc0a384cfdf874cb6aca0e750aaf2c2c7899a6f1de81a091c306ca8",
+      "bytes": 44842,
+      "features": 85,
+      "mappedFeatures": 84,
+      "invalidGeometryCount": 1
+    },
+    {
+      "id": 350,
+      "file": "data/geojson/350.geojson",
+      "sha256": "f4c8ace2a4c7124883c7ccfe287c39c2ce2e5c0ee520802711d80d7d9bee13b0",
+      "bytes": 2646,
+      "features": 6,
+      "mappedFeatures": 6,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 352,
+      "file": "data/geojson/352.geojson",
+      "sha256": "66c54cf97c501b54176b2e784d63c7e96857798675e9ce47afaed9ff14fb4693",
+      "bytes": 22280,
+      "features": 62,
+      "mappedFeatures": 62,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 353,
+      "file": "data/geojson/353.geojson",
+      "sha256": "4a47a855f69643c82360ffa14d7fcf9e23c864107b159c6032f053cd34d20fda",
+      "bytes": 135049,
+      "features": 240,
+      "mappedFeatures": 240,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 355,
+      "file": "data/geojson/355.geojson",
+      "sha256": "a90214b9894f71cf69bbf79ab2fc80b5391513213db6ecc58fcc9ece2e8a2dc9",
+      "bytes": 178596,
+      "features": 335,
+      "mappedFeatures": 335,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 356,
+      "file": "data/geojson/356.geojson",
+      "sha256": "006245d2451eb457c52ec631c87bb26e69560cccc693b64d28422cfaf2d90871",
+      "bytes": 5333,
+      "features": 13,
+      "mappedFeatures": 13,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 358,
+      "file": "data/geojson/358.geojson",
+      "sha256": "3ebca861a625385d7a5ac088e2b3adf441a09659997e73172d75be154648bb71",
+      "bytes": 51916,
+      "features": 156,
+      "mappedFeatures": 156,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 359,
+      "file": "data/geojson/359.geojson",
+      "sha256": "9b78a13fac7701e1153c9954fb4e43f5d2b9cb350ff53420fdd92b261b1ed8bb",
+      "bytes": 172756,
+      "features": 582,
+      "mappedFeatures": 582,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 360,
+      "file": "data/geojson/360.geojson",
+      "sha256": "4aa4db78559ff9bfacf0da25e647ae17f4f8811e2a959db87d611bd800e46c84",
+      "bytes": 64732,
+      "features": 200,
+      "mappedFeatures": 200,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 361,
+      "file": "data/geojson/361.geojson",
+      "sha256": "fd6dec0ec94c6d875667398486baaf5a1cc8a66f0a093c062447f94b11b4c5ed",
+      "bytes": 23215,
+      "features": 74,
+      "mappedFeatures": 74,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 362,
+      "file": "data/geojson/362.geojson",
+      "sha256": "e77944a7f5bc2ab080664132689d84cd2e32c0ec6ddfc9d37c531e6a29f80e5a",
+      "bytes": 33079,
+      "features": 100,
+      "mappedFeatures": 100,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 363,
+      "file": "data/geojson/363.geojson",
+      "sha256": "c46613a76defac4824a25843bdc100c86f0042afa3af831d8c4503839bdbaab5",
+      "bytes": 12849,
+      "features": 36,
+      "mappedFeatures": 36,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 364,
+      "file": "data/geojson/364.geojson",
+      "sha256": "24fa6f0d6489580ee008ea795c54d6072738b993adc37fb9ebd22ca04a98df86",
+      "bytes": 17109,
+      "features": 39,
+      "mappedFeatures": 39,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 366,
+      "file": "data/geojson/366.geojson",
+      "sha256": "ba6cf3647ecc4b3d71432676f4b2d5071320dc9148e4319a17531fc5688c2668",
+      "bytes": 20548,
+      "features": 53,
+      "mappedFeatures": 53,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 368,
+      "file": "data/geojson/368.geojson",
+      "sha256": "10c7a1b6daf3857262e4bfc8efb7910170fe7432df5e2ec280f272d986d8bc9c",
+      "bytes": 178480,
+      "features": 316,
+      "mappedFeatures": 316,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 369,
+      "file": "data/geojson/369.geojson",
+      "sha256": "347032afdbf084b8f7750caf543220ea4701d77b4c7e43e2b481a8454e766109",
+      "bytes": 68341,
+      "features": 100,
+      "mappedFeatures": 100,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 370,
+      "file": "data/geojson/370.geojson",
+      "sha256": "fac004ce1bbbd2f5468d084c9ab1bab1278ebfe312c2640e412728e3112ebc27",
+      "bytes": 11698,
+      "features": 32,
+      "mappedFeatures": 32,
+      "invalidGeometryCount": 0
+    },
+    {
+      "id": 371,
+      "file": "data/geojson/371.geojson",
+      "sha256": "343a0c963bb457be4ab1d2b4fef80a872e37701eb1e99ca1d58812e8db6a0334",
+      "bytes": 3263,
+      "features": 8,
+      "mappedFeatures": 8,
+      "invalidGeometryCount": 0
+    }
+  ],
+  "totals": {
+    "categories": 19,
+    "layers": 103,
+    "features": 35017,
+    "sourceFeatures": 36643,
+    "invalidGeometries": 1626,
+    "points": 30221,
+    "lines": 4569,
+    "polygons": 227,
+    "coordinateCorrections": 1499
+  }
+}
