@@ -2,6 +2,7 @@
 
 import { readFile, stat } from "node:fs/promises";
 import { resolve } from "node:path";
+import { Script } from "node:vm";
 
 const root = resolve(import.meta.dirname, "..");
 const required = [
@@ -9,6 +10,8 @@ const required = [
   "assets/app.js",
   "assets/styles.css",
   "assets/logo.svg",
+  "tools/run_python.mjs",
+  "tools/serve.mjs",
   "data/catalog.json",
   "data/source-manifest.json",
   "data/pmtiles-manifest.json",
@@ -31,18 +34,21 @@ await Promise.all(
   }),
 );
 
-const [catalogText, sourceText, manifestText, archive, html, app] = await Promise.all([
-  readFile(resolve(root, "data/catalog.json"), "utf8"),
-  readFile(resolve(root, "data/source-manifest.json"), "utf8"),
-  readFile(resolve(root, "data/pmtiles-manifest.json"), "utf8"),
-  readFile(resolve(root, "data/vinhlong-layers.pmtiles")),
-  readFile(resolve(root, "index.html"), "utf8"),
-  readFile(resolve(root, "assets/app.js"), "utf8"),
-]);
+const [catalogText, sourceText, manifestText, archive, html, app, packageText] =
+  await Promise.all([
+    readFile(resolve(root, "data/catalog.json"), "utf8"),
+    readFile(resolve(root, "data/source-manifest.json"), "utf8"),
+    readFile(resolve(root, "data/pmtiles-manifest.json"), "utf8"),
+    readFile(resolve(root, "data/vinhlong-layers.pmtiles")),
+    readFile(resolve(root, "index.html"), "utf8"),
+    readFile(resolve(root, "assets/app.js"), "utf8"),
+    readFile(resolve(root, "package.json"), "utf8"),
+  ]);
 
 const catalog = JSON.parse(catalogText);
 const source = JSON.parse(sourceText);
 const manifest = JSON.parse(manifestText);
+const packageJson = JSON.parse(packageText);
 const expected = {
   categories: 19,
   layers: 103,
@@ -63,6 +69,25 @@ if (!html.includes("maplibre-gl@6.0.0")) failures.push("MapLibre dependency is n
 if (!html.includes("pmtiles@4.4.1")) failures.push("PMTiles dependency is not pinned");
 if (!app.includes('maplibregl.addProtocol("pmtiles"')) {
   failures.push("PMTiles protocol registration missing");
+}
+try {
+  new Script(app, { filename: "assets/app.js" });
+} catch (error) {
+  failures.push(`assets/app.js: ${error.message}`);
+}
+if (!html.includes('id="archive-status"')) failures.push("runtime archive status UI missing");
+if (packageJson.scripts.serve !== "node tools/serve.mjs") {
+  failures.push("serve script must use the cross-platform Node.js server");
+}
+
+const htmlIds = [...html.matchAll(/\sid="([^"]+)"/g)].map((match) => match[1]);
+const duplicateIds = htmlIds.filter((id, index) => htmlIds.indexOf(id) !== index);
+if (duplicateIds.length) {
+  failures.push(`duplicate HTML ids: ${[...new Set(duplicateIds)].join(", ")}`);
+}
+const declaredIds = new Set(htmlIds);
+for (const match of app.matchAll(/\$\("#([A-Za-z][\w-]*)"\)/g)) {
+  if (!declaredIds.has(match[1])) failures.push(`assets/app.js references missing #${match[1]}`);
 }
 
 if (failures.length) {

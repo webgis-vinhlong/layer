@@ -52,6 +52,8 @@
     labelsVisible: true,
     currentBasemap: APP.defaultBasemap,
     userMarker: null,
+    selectedLocation: null,
+    archiveError: false,
     toastTimer: null,
   };
 
@@ -72,6 +74,8 @@
     inspectorProperties: $("#inspector-properties"),
     basemapMenu: $("#basemap-menu"),
     basemapButton: $("#basemap-button"),
+    archiveStatus: $("#archive-status"),
+    archiveStatusText: $("#archive-status-text"),
     sidebar: $("#sidebar"),
     sidebarToggle: $("#sidebar-toggle"),
     backdrop: $("#backdrop"),
@@ -106,6 +110,12 @@
     if (window.lucide) {
       window.lucide.createIcons({ attrs: { "aria-hidden": "true" } });
     }
+  }
+
+  function setArchiveStatus(message, tone = "ready") {
+    dom.archiveStatusText.textContent = message;
+    dom.archiveStatus.classList.toggle("is-loading", tone === "loading");
+    dom.archiveStatus.classList.toggle("is-error", tone === "error");
   }
 
   function restorePreferences() {
@@ -428,6 +438,18 @@
             ${icon("chevron-down", "group-chevron")}
           </button>
           <div class="group-layers">
+            <div
+              class="group-actions"
+              role="group"
+              aria-label="Thao tác nhóm ${escapeHtml(category.label)}"
+            >
+              <button type="button" data-group-show="${escapeHtml(category.id)}">
+                ${icon("eye")} Bật cả nhóm
+              </button>
+              <button type="button" data-group-hide="${escapeHtml(category.id)}">
+                ${icon("eye-off")} Ẩn cả nhóm
+              </button>
+            </div>
             ${layers
               .map(
                 (layer) => `
@@ -480,7 +502,25 @@
     $$("[data-layer-fit]").forEach((button) => {
       button.addEventListener("click", () => focusLayer(Number(button.dataset.layerFit)));
     });
+    $$("[data-group-show]").forEach((button) => {
+      button.addEventListener("click", () => toggleCategory(button.dataset.groupShow, true));
+    });
+    $$("[data-group-hide]").forEach((button) => {
+      button.addEventListener("click", () => toggleCategory(button.dataset.groupHide, false));
+    });
     refreshIcons();
+  }
+
+  function toggleCategory(categoryId, visible) {
+    const category = state.catalog.categories.find((item) => item.id === categoryId);
+    if (!category) return;
+    const next = new Set(state.active);
+    category.layerIds.forEach((layerId) => {
+      if (visible) next.add(layerId);
+      else next.delete(layerId);
+    });
+    setActive(next);
+    showToast(`${visible ? "Đã bật" : "Đã ẩn"} ${category.layerCount} lớp · ${category.label}`);
   }
 
   function geometryIcon(geometry) {
@@ -516,6 +556,7 @@
     const properties = feature.properties || {};
     const color = properties._color || "#0da6a6";
     const title = properties._label || properties._layer_name || "Đối tượng bản đồ";
+    state.selectedLocation = [lngLat.lng, lngLat.lat];
     dom.inspector.style.setProperty("--feature-color", color);
     dom.inspectorTitle.textContent = title;
     dom.inspectorCategory.textContent =
@@ -552,6 +593,24 @@
       : '<div class="empty-state">Đối tượng không có thuộc tính công khai.</div>';
     dom.inspector.hidden = false;
     refreshIcons();
+  }
+
+  async function copyText(value, successMessage) {
+    try {
+      await navigator.clipboard.writeText(value);
+      showToast(successMessage);
+    } catch {
+      const textarea = document.createElement("textarea");
+      textarea.value = value;
+      textarea.setAttribute("readonly", "");
+      textarea.style.position = "fixed";
+      textarea.style.opacity = "0";
+      document.body.append(textarea);
+      textarea.select();
+      const copied = document.execCommand("copy");
+      textarea.remove();
+      showToast(copied ? successMessage : "Không thể sao chép tự động.");
+    }
   }
 
   function displayValue(value) {
@@ -649,6 +708,9 @@
       );
     });
     $("#locate-button").addEventListener("click", locateUser);
+    $("#share-button").addEventListener("click", () => {
+      copyText(window.location.href, "Đã sao chép liên kết khung nhìn.");
+    });
     dom.basemapButton.addEventListener("click", () => {
       const willOpen = dom.basemapMenu.hidden;
       dom.basemapMenu.hidden = !willOpen;
@@ -660,6 +722,21 @@
     });
     $("#inspector-close").addEventListener("click", () => {
       dom.inspector.hidden = true;
+    });
+    $("#copy-coordinate").addEventListener("click", () => {
+      if (!state.selectedLocation) return;
+      copyText(
+        `${state.selectedLocation[1].toFixed(6)}, ${state.selectedLocation[0].toFixed(6)}`,
+        "Đã sao chép tọa độ.",
+      );
+    });
+    $("#zoom-feature").addEventListener("click", () => {
+      if (!state.selectedLocation) return;
+      state.map.flyTo({
+        center: state.selectedLocation,
+        zoom: Math.max(state.map.getZoom(), 15),
+        duration: 750,
+      });
     });
     dom.sidebarToggle.addEventListener("click", openSidebar);
     $("#sidebar-close").addEventListener("click", closeSidebar);
@@ -731,6 +808,7 @@
       bindUi();
       renderLayers();
       refreshIcons();
+      setArchiveStatus("Đang tải PMTiles", "loading");
 
       const protocol = new pmtiles.Protocol();
       maplibregl.addProtocol("pmtiles", protocol.tile);
@@ -748,6 +826,8 @@
         attributionControl: false,
         hash: true,
         cooperativeGestures: true,
+        renderWorldCopies: false,
+        fadeDuration: 0,
       });
       state.map.addControl(
         new maplibregl.NavigationControl({ visualizePitch: true, showCompass: true }),
@@ -772,16 +852,20 @@
       });
       state.map.on("idle", () => {
         dom.mapLoading.classList.add("hidden");
+        if (!state.archiveError) setArchiveStatus("PMTiles sẵn sàng");
       });
       state.map.on("error", (event) => {
         const message = event?.error?.message || "";
-        if (/pmtiles|range|source/i.test(message)) {
+        if (/pmtiles|range|vinhlong-layers/i.test(message)) {
+          state.archiveError = true;
           showToast("Không thể đọc kho PMTiles. Hãy tải trang qua HTTP/HTTPS.");
+          setArchiveStatus("Lỗi dữ liệu", "error");
         }
         console.error("MapLibre:", event.error || event);
       });
     } catch (error) {
       console.error(error);
+      setArchiveStatus("Không thể khởi tạo", "error");
       dom.mapLoading.innerHTML = `
         <div>
           <strong>Không thể khởi tạo WebGIS</strong>

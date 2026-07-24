@@ -47,7 +47,10 @@
         <div class="topbar-metrics" aria-label="Thống kê dữ liệu">
           <span><strong id="metric-layers">103</strong> lớp</span>
           <span><strong id="metric-features">35.017</strong> đối tượng</span>
-          <span class="status-pill"><span class="status-dot"></span> PMTiles v3</span>
+          <span id="archive-status" class="status-pill is-loading" role="status" aria-live="polite">
+            <span class="status-dot"></span>
+            <span id="archive-status-text">Đang khởi tạo</span>
+          </span>
         </div>
 
         <a
@@ -140,6 +143,14 @@
           <button id="basemap-button" class="tool-button" type="button" aria-expanded="false">
             <i data-lucide="map"></i><span>Nền bản đồ</span>
           </button>
+          <button
+            id="share-button"
+            class="tool-button"
+            type="button"
+            title="Sao chép liên kết khung nhìn"
+          >
+            <i data-lucide="link-2"></i><span>Chia sẻ</span>
+          </button>
         </section>
 
         <div id="basemap-menu" class="basemap-menu" hidden>
@@ -178,6 +189,14 @@
             </button>
           </header>
           <div id="inspector-meta" class="inspector-meta"></div>
+          <div class="inspector-actions">
+            <button id="copy-coordinate" type="button">
+              <i data-lucide="copy"></i> Sao chép tọa độ
+            </button>
+            <button id="zoom-feature" type="button">
+              <i data-lucide="focus"></i> Đến vị trí
+            </button>
+          </div>
           <dl id="inspector-properties" class="property-list"></dl>
         </section>
 

@@ -89,7 +89,8 @@ flowchart LR
 
 ## 🚀 快速开始
 
-环境要求：Python 3.10+、Node.js 20+。
+使用 WebGIS 只需要 Node.js 20+。以下命令可在命令提示符、PowerShell、Windows Terminal、
+macOS 与 Linux 中直接使用：
 
 ```bash
 git clone https://github.com/webgis-vinhlong/layer.git
@@ -98,10 +99,22 @@ npm install
 npm run serve
 ```
 
-打开 `http://localhost:4173`。请勿使用 `file://` 直接打开页面，因为 PMTiles 需要 HTTP
-Range 请求。
+打开 **[http://localhost:4173](http://localhost:4173)**。内置 Node.js 服务器支持 PMTiles
+所需的 HTTP Range，无需 `python3`。
+
+仓库只需克隆一次。如果命令提示符已经显示 `C:\Users\Admin\layer>`，请继续运行
+`npm install` 和 `npm run serve`，不要再创建嵌套的 `layer` 目录。
+
+如需更换端口：
+
+```bash
+npm run serve -- --port 8080
+```
 
 重新构建并验证归档：
+
+重建数据还需要 Python 3.10+。启动器会在 Windows 上自动识别 `py -3`/`python`，在
+macOS 与 Linux 上识别 `python3`/`python`。
 
 ```bash
 npm run build
@@ -122,6 +135,8 @@ npm run verify
 │   ├── source-manifest.json   # 哈希、数量与质量报告
 │   └── vinhlong-layers.pmtiles
 ├── tools/                     # Python/Node 构建流水线
+│   ├── serve.mjs              # 跨平台 HTTP Range 服务器
+│   └── run_python.mjs         # 自动识别 Python 命令
 ├── native/                    # Go/Rust/C++ 校验工具
 └── .github/workflows/         # CI 与 GitHub Pages
 ```
