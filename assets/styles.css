@@ -162,6 +162,29 @@ input:focus-visible {
   box-shadow: 0 0 0 4px rgb(77 228 179 / 12%);
 }
 
+.status-pill.is-loading .status-dot {
+  background: #fbbf24;
+  box-shadow: 0 0 0 4px rgb(251 191 36 / 13%);
+  animation: status-pulse 1.2s ease-in-out infinite;
+}
+
+.status-pill.is-error {
+  color: #ffe5e5;
+  border-color: rgb(255 130 130 / 28%);
+  background: rgb(130 25 38 / 38%);
+}
+
+.status-pill.is-error .status-dot {
+  background: #ff7b7b;
+  box-shadow: 0 0 0 4px rgb(255 123 123 / 13%);
+}
+
+@keyframes status-pulse {
+  50% {
+    opacity: 0.45;
+  }
+}
+
 .github-link {
   display: inline-flex;
   align-items: center;
@@ -468,6 +491,37 @@ kbd {
 
 .layer-group.open .group-layers {
   display: block;
+}
+
+.group-actions {
+  display: flex;
+  gap: 6px;
+  padding: 1px 6px 6px;
+}
+
+.group-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 7px;
+  color: #68798a;
+  font-size: 9px;
+  font-weight: 700;
+  border: 1px solid #dce5eb;
+  border-radius: 7px;
+  background: white;
+  cursor: pointer;
+}
+
+.group-actions button:hover {
+  color: #087e82;
+  border-color: #abdeda;
+  background: #eefafa;
+}
+
+.group-actions svg {
+  width: 12px;
+  height: 12px;
 }
 
 .layer-row {
@@ -803,6 +857,37 @@ kbd {
   flex-wrap: wrap;
   gap: 6px;
   padding: 0 17px 13px;
+}
+
+.inspector-actions {
+  display: flex;
+  gap: 7px;
+  padding: 0 17px 14px;
+}
+
+.inspector-actions button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 9px;
+  color: #3f5668;
+  font-size: 9px;
+  font-weight: 750;
+  border: 1px solid #d8e4ea;
+  border-radius: 8px;
+  background: #f7fafb;
+  cursor: pointer;
+}
+
+.inspector-actions button:hover {
+  color: #087e82;
+  border-color: #abdeda;
+  background: #eefafa;
+}
+
+.inspector-actions svg {
+  width: 13px;
+  height: 13px;
 }
 
 .meta-badge {

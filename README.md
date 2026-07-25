@@ -61,8 +61,9 @@ mở rộng.
 | 🎨 Ký hiệu theo tỷ lệ | Điểm, đường, vùng có màu theo nhóm; kích thước, độ rộng và độ trong suốt biến đổi theo mức zoom |
 | 🛰️ Ba nền bản đồ | CARTO sáng, CARTO tối và Esri World Imagery; chuyển nền mà không tải lại dữ liệu chuyên đề |
 | 🔎 Truy vấn an toàn | Thuộc tính được dựng bằng DOM/text escaping; hiển thị tối đa 40 trường có ý nghĩa |
-| 📱 Responsive | Sidebar dạng ngăn kéo trên điện thoại, bảng thuộc tính dạng bottom sheet, hỗ trợ bàn phím và reduced motion |
+| 📱 Responsive | Sidebar dạng ngăn kéo trên điện thoại, bảng thuộc tính dạng bottom sheet, thao tác cả nhóm lớp, hỗ trợ bàn phím và reduced motion |
 | 🔁 Có thể tái tạo | Pipeline Python → Tippecanoe C++ → VersaTiles Rust → PMTiles; Go/C++/Rust kiểm tra độc lập trong CI |
+| 🪟 Chạy đa nền tảng | Máy chủ Node.js tích hợp hỗ trợ Windows, macOS, Linux và HTTP Range; không cần lệnh `python3` để mở WebGIS |
 
 ## 📊 Thống kê dữ liệu
 
@@ -102,7 +103,8 @@ flowchart LR
 
 ## 🚀 Khởi chạy nhanh
 
-Yêu cầu: Python 3.10+ và Node.js 20+.
+Để **xem và sử dụng WebGIS**, chỉ cần Node.js 20+. Các lệnh dưới đây dùng giống nhau trong
+Command Prompt, PowerShell, Windows Terminal, macOS và Linux:
 
 ```bash
 git clone https://github.com/webgis-vinhlong/layer.git
@@ -111,10 +113,23 @@ npm install
 npm run serve
 ```
 
-Mở `http://localhost:4173`. Không mở trực tiếp `index.html` bằng `file://`, vì trình duyệt cần
-HTTP Range để đọc PMTiles.
+Mở **[http://localhost:4173](http://localhost:4173)**. Máy chủ Node.js tích hợp hỗ trợ HTTP Range
+để trình duyệt chỉ đọc đúng phần PMTiles cần thiết. Không mở trực tiếp `index.html` bằng `file://`.
+
+> [!IMPORTANT]
+> Chỉ chạy `git clone` **một lần**. Nếu dấu nhắc hiện `C:\Users\Admin\layer>`, hãy chạy tiếp
+> `npm install` và `npm run serve`; không clone thêm một thư mục `layer` bên trong.
+
+Đổi cổng khi `4173` đang được sử dụng:
+
+```bash
+npm run serve -- --port 8080
+```
 
 ### Tái tạo toàn bộ PMTiles
+
+Tác vụ build dữ liệu cần thêm Python 3.10+. Trình chạy tự nhận `py -3`/`python` trên Windows và
+`python3`/`python` trên macOS, Linux:
 
 ```bash
 npm run build
@@ -151,6 +166,8 @@ go run native/pmtiles_inspect.go data/vinhlong-layers.pmtiles
 │   ├── source-manifest.json   # Hash, số lượng và lỗi theo lớp
 │   └── vinhlong-layers.pmtiles
 ├── tools/                     # Pipeline Python/Node
+│   ├── serve.mjs              # Máy chủ đa nền tảng có HTTP Range
+│   └── run_python.mjs         # Tự nhận lệnh Python theo hệ điều hành
 ├── native/                    # Bộ kiểm tra Go/Rust/C++
 └── .github/workflows/         # CI và GitHub Pages
 ```

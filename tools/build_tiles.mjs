@@ -7,6 +7,7 @@ import { existsSync, mkdirSync, rmSync } from "node:fs";
 import { spawnSync } from "node:child_process";
 import { resolve } from "node:path";
 import { convert } from "@versatiles/versatiles-rs";
+import { runPythonSync } from "./run_python.mjs";
 
 const root = resolve(import.meta.dirname, "..");
 const build = resolve(root, "build");
@@ -82,10 +83,9 @@ if (tippecanoeResult.status !== 0) {
   throw new Error(`Tippecanoe exited with status ${tippecanoeResult.status}`);
 }
 
-const metadataResult = spawnSync(
-  "python3",
+const metadataResult = runPythonSync(
   ["tools/finalize_mbtiles.py", mbtiles, "data/catalog.json"],
-  { cwd: root, stdio: "inherit" },
+  { cwd: root },
 );
 if (metadataResult.error) throw metadataResult.error;
 if (metadataResult.status !== 0) {

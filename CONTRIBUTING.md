@@ -7,7 +7,7 @@ tác động đến dữ liệu.
 
 1. Tạo issue mô tả lỗi hoặc đề xuất.
 2. Fork repository và tạo nhánh theo dạng `feature/ten-ngan` hoặc `fix/ten-ngan`.
-3. Chạy `npm install`, `npm run build:data` và `npm run verify`.
+3. Chạy `npm install` và `npm run verify`. Nếu sửa dữ liệu, chạy thêm `npm run build:data`.
 4. Nếu sửa GeoJSON, nêu rõ ID lớp, nguồn và lý do thay đổi.
 5. Gửi pull request kèm ảnh trước/sau đối với thay đổi UI.
 

@@ -33,6 +33,24 @@ jobs:
       - name: Kiểm tra website và PMTiles
         run: npm run verify
 
+      - name: Kiểm tra máy chủ HTTP Range
+        shell: bash
+        run: |
+          npm run serve > /tmp/layer-server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          for attempt in {1..20}; do
+            curl --silent --fail http://127.0.0.1:4173/ >/dev/null && break
+            sleep 0.25
+          done
+          curl --fail --silent --show-error \
+            --range 0-126 \
+            --output /tmp/pmtiles-header \
+            --dump-header /tmp/pmtiles-headers \
+            http://127.0.0.1:4173/data/vinhlong-layers.pmtiles
+          grep --ignore-case --quiet '^HTTP/.* 206' /tmp/pmtiles-headers
+          test "$(wc -c < /tmp/pmtiles-header)" -eq 127
+
       - name: Kiểm tra GeoJSONL bằng C++
         run: |
           g++ -std=c++20 -O2 -Wall -Wextra native/geometry_sanity.cpp -o build/geometry_sanity

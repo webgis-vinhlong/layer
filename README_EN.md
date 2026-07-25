@@ -96,7 +96,8 @@ flowchart LR
 
 ## 🚀 Quick start
 
-Requirements: Python 3.10+ and Node.js 20+.
+Using the WebGIS only requires Node.js 20+. The same commands work in Command Prompt,
+PowerShell, Windows Terminal, macOS, and Linux:
 
 ```bash
 git clone https://github.com/webgis-vinhlong/layer.git
@@ -105,10 +106,22 @@ npm install
 npm run serve
 ```
 
-Open `http://localhost:4173`. Do not use a `file://` URL because PMTiles relies on HTTP Range
-requests.
+Open **[http://localhost:4173](http://localhost:4173)**. The built-in Node.js server supports
+HTTP Range requests and does not require `python3`.
+
+Clone the repository only once. If the prompt already shows `C:\Users\Admin\layer>`, continue
+with `npm install` and `npm run serve` instead of cloning another nested `layer` directory.
+
+To use another port:
+
+```bash
+npm run serve -- --port 8080
+```
 
 Rebuild and verify the complete archive:
+
+Rebuilding data additionally requires Python 3.10+. The launcher automatically detects `py -3`
+or `python` on Windows and `python3` or `python` on macOS/Linux.
 
 ```bash
 npm run build
@@ -129,6 +142,8 @@ Set `TIPPECANOE=/path/to/tippecanoe` to use a system Tippecanoe executable.
 │   ├── source-manifest.json   # Hashes, counts, data-quality report
 │   └── vinhlong-layers.pmtiles
 ├── tools/                     # Python/Node build pipeline
+│   ├── serve.mjs              # Cross-platform HTTP Range server
+│   └── run_python.mjs         # OS-aware Python launcher
 ├── native/                    # Go/Rust/C++ validators
 └── .github/workflows/         # CI and GitHub Pages
 ```
